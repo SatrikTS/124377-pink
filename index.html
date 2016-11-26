@@ -3,10 +3,155 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__logo">
+        <span class="page-header__logo-title">Pink</span>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button type="button" class="main-nav__toogle btn">
+          <span class="icon-bar icon-bar--top"></span>
+          <span class="icon-bar icon-bar--middle icon-bar--middle-hidden"></span>
+          <span class="icon-bar icon-bar--bottom"></span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li  class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
+            <li  class="main-nav__link"><a href="#">Фотографии</a></li>
+            <li  class="main-nav__link"><a href="#">Конкурс</a></li>
+            <li  class="main-nav__link"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="page-title">
+        <img src="http://placehold.it/150x300">
+      </div>
+      <div class="application">
+        <div class="aplication__link-block">
+          <a class="aplication__link--downoload" href="#"></a>
+          <a class="aplication__link aplication-shop__link--aple"></a>
+          <a class="aplication__link aplication-shop__link--android"></a>
+          <a class="aplication__link aplication-shop__link--windows"></a>
+        </div>
+        <div class="aplication__info-block">
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+      <section class="promo">
+        <header class="promo__head">
+          <b class="promo__string">Устали от серости магаполиса?</b>
+          <b class="promo__string">Нам есть, что вам предложить!</b>
+        </header>
+        <div class="promo__block">
+          <h3 class="promo__block__title">Понимает настроение</h3>
+          <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="promo__block">
+          <h3 class="promo__block__title">Меняет мир вокруг</h3>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="promo__block">
+          <h3 class="promo__block__title">Заводит новых друзей</h3>
+          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <div class="welcome">
+        <img src="http://placehold.it/150x300">
+        <b class="welcome_text">Всем привет</b>
+      </div>
+      <section class="reviews">
+        <div class="reviews__wrap slider">
+          <h2 class="reviews__title visually-hidden">Отзывы</h2>
+          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <ul class="reviews__items">
+            <li class="reviews__item">
+              <h3>Николай Петров</h3>
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи. А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item">
+              <h3>Николай Петров</h3>
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи. А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item">
+              <h3>Николай Петров</h3>
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи. А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+          </ul>
+          <div class="reviews__toggles slider__toggles">
+            <label class="slider-toggle" for="reviews-input-1"></label>
+            <label class="slider-toggle" for="reviews-input-2"></label>
+            <label class="slider-toggle" for="reviews-input-3"></label>
+          </div>
+        </div>
+      </section>
+      <section class="rates">
+        <div class="rates_wrap slider">
+          <h2 class="rates-title visually-hidden">Тарифы</h2>
+          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-1" checked>
+          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-2">
+          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-3">
+          <table class="rates__table functions">
+            <tr class="functions__table-header">
+              <th class="function  function--basic">
+                <h3>Базовый</h3>
+                <b class="rates__price">2.99 USD</b>
+              </th>
+              <th class="function function--standart">
+                <h3>Стандарт</h3>
+                <b class="rates__price">3.99 USD</b>
+              </th>
+              <th class="function function--full">
+                <h3>Полный</h3>
+                <b class="rates__price">4.99 USD</b>
+              </th>
+            </tr>
+            <tr>
+                <td class="functions__list  functions__list--yes">Розовый фильтр </td>
+                <td class="functions__list  functions__list--no">Розовый фильтр </td>
+                <td class="functions__list  functions__list--no">Розовый фильтр </td>
+            </tr>
+            <tr>
+                <td class="functions__list  functions__list--yes"> Смайлики </td>
+                <td class="functions__list  functions__list--yes"> Смайлики </td>
+                <td class="functions__list  functions__list--no"> Смайлики </td>
+            </tr>
+            <tr>
+                <td class="functions__list  functions__list--yes"> Комментарии</td>
+                <td class="functions__list  functions__list--yes"> Комментарии</td>
+                <td class="functions__list  functions__list--yes"> Комментарии</td>
+            </tr>
+          </table>
+          <div class="rates slider__toggles">
+            <label class="slider-toggle" for="rates-input-1"></label>
+            <label class="slider-toggle" for="rates-input-2"></label>
+            <label class="slider-toggle" for="rates-input-3"></label>
+          </div>
+      </section>
+      <section class="main-contacts">
+        <div class="main-contacts__info">
+          <h3>Остались вопросы?<br> Свяжитесь с нами!</h3>
+           <article class="main-contacts__call">
+             <b>Звоните:</b>
+             <a href="tel:+7(812) 555-66-66"></a>
+           </article>
+           <article class="main-contacts__mail">
+             <b>Пишите:</b>
+             <a href="mailto:html@htmlacademy.ru?subject=feedback">html@htmlacademy.ru</a>
+           </article>
+           <article class="main-contacts__address ">
+             <b>Приезжайте в гости:</b>
+             <span class="">ул. Большая Конюшенная, 19/8</span>
+           </article>
+        </div>
+        <div class="main-contacts__map">
+          <img src="http://placehold.it/300x300">
+        </div>
+      </section>
   </body>
 </html>
