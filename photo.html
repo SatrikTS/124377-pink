@@ -82,21 +82,23 @@
             <p> Всем GM и взаимные лайки!</p>
             <span class="preview__like like">Нравиться: <span class="like_counte">2560</span></span>
           </article>
-          <p class="preview__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="preview__text preview__text--bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="upload">
-        <img src="http://placehold.it/200x130">
-        <div class="upload__filters filters">
-          <button class="filters__btn  filters__btn--size" type="button"></button>
-          <button class="filters__btn  filters__btn--color" type="button"></button>
-          <button class="filters__btn  filters__btn--contrast" type="button"></button>
-          <input type="range" min="1" max="14" step="1">
-        </div>
-        <div class="upload__checked">
-          <button class="upload__btn  upload__btn--send" type="button">Запостить</button>
-          <button class="upload__btn  upload__btn--cancel" type="button">Отмена</button>
-        </div>
+        <form action="/echo" method="post" class="upload__form">
+          <img src="http://placehold.it/200x130">
+          <div class="upload__filters filters">
+            <input type="img" src="http://placehold.it/30x30" class="filters__btn  filters__btn--size" alt="размер">
+            <input type="img" src="http://placehold.it/30x30" class="filters__btn  filters__btn--color" alt="цвет">
+            <input type="img" src="http://placehold.it/30x30" class="filters__btn  filters__btn--contrast" alt="контраст">
+            <input type="range" min="1" max="100" step="1">
+          </div>
+          <div class="upload__checked">
+            <button class="upload__btn  upload__btn--send" type="button">Запостить</button>
+            <button class="upload__btn  upload__btn--cancel" type="button">Отмена</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">

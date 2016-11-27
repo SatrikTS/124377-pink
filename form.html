@@ -6,53 +6,88 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__logo">
-        <span class="page-header__logo-title">Pink</span>
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <button type="button" class="main-nav__toogle">
-          <span class="icon-bar icon-bar--top"></span>
-          <span class="icon-bar icon-bar--middle icon-bar--middle-hidden"></span>
-          <span class="icon-bar icon-bar--bottom"></span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__link"><a href="index.html">Главная</a></li>
-            <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__link main-nav__link--active"><a href="#">Конкурс</a></li>
-            <li class="main-nav__link"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__title">
-        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
-    </header>
-    <main>
-      <div class="contest">
-        <p class="contest__text"> Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-        <form class="contest__form">
-        </form>
-      </div>
-    </main>
-      <footer class="page-footer">
-        <div class="page-footer__logo">
-          <b>Pink</b>
-        </div>
-        <section class="page-footer__social">
-          <div class="social-links">
-            <a class="social-link social-link--tw" href="#vk"></a>
-            <a class="social-link social-link--fb" href="#vk"></a>
-            <a class="social-link social-link--yout" href="#vk"></a>
-          </div>
-        </section>
-        <div class="page-footer__copyright">
-          <div class="copyright">
-            <span class="copyright__text"> Разработано</span>
-            <a class="copyright__ico" href="https://htmlacademy.ru/" target="_blank"></a>
-          </div>
-        </div>
-      </footer>
-    </body>
-  </html>
+   <header class="page-header">
+    <div class="page-header__logo">
+     <span class="page-header__logo-title">Pink</span>
+    </div>
+    <nav class="main-nav main-nav--closed">
+     <button type="button" class="main-nav__toogle">
+      <span class="icon-bar icon-bar--top"></span>
+      <span class="icon-bar icon-bar--middle icon-bar--middle-hidden"></span>
+      <span class="icon-bar icon-bar--bottom"></span>
+     </button>
+     <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+       <li class="main-nav__link"><a href="index.html">Главная</a></li>
+       <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
+       <li class="main-nav__link main-nav__link--active"><a href="#">Конкурс</a></li>
+       <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+      </ul>
+     </div>
+    </nav>
+    <div class="page-header__title">
+     <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+   </header>
+   <main>
+    <div class="contest">
+     <p class="contest__text"> Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+     <form class="contest__form form" action="/echo" method="post">
+      <fieldset class="form__data-name">
+       <label for="family">Фамилия:</label>
+       <input type="text" name="family" id="family" placeholder="Укажите фамилию*" required>
+       <label for="name">Имя:</label>
+       <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+       <label for="patronymic">Отчество:</label>
+       <input type="text" name="patronymic" id="patronymic"placeholder="Ну и отчество тоже">
+      </fieldset>
+      <fieldset class="form__check-variant">
+       <legend>Ваши безбашные достижения в путешествии</legend>
+       <label><input type="checkbox" name="selfi" checked>Сделал селфи с акулой</label>
+       <label><input type="checkbox" name="beach" checked>Обгорел на пляже</label>
+       <label><input type="checkbox" name="Chack">Видел Чака Норриса</label>
+       <label><input type="checkbox" name="souvenir">Накупил сувениров</label>
+       <label><input type="checkbox" name="Pisa" checked>Удержал башню</label>
+       <label><input type="checkbox" name="destroy-hotel">Разгромил отель</label>
+     </fieldset>
+      <fieldset class="form__contacts_data">
+       <label for="phone">Номер телефона</label>
+       <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+       <label for="email">Адресок почты</label>
+       <input type="email" name="email" id="email" required placeholder="Введите почту*">
+      </fieldset>
+      <fieldset class="form__application-choose">
+       <legend>С каким приложением путешествовали?</legend>
+       <label><input type="radio" name="application" value="iOs" checked>Pink для iOS</label>
+       <label><input type="radio" name="application" value="Android">Pink на Android</label>
+       <label><input type="radio" name="application" value="Windows Phone">Windows Phone</label>
+      </fieldset>
+      <fieldset class="form__message">
+       <label for="review">Опишите свои эмоции</label>
+       <textarea name="review" id="review" rows="6">Можно прям в карсках, не стесняясь в выражениях</textarea>
+      </fieldset>
+      <input class="form__button" type="submit" value="Отправить форму">
+      <span class="form__remark"><b>*</b> - обязательные поля</span>
+     </form>
+    </div>
+   </main>
+   <footer class="page-footer">
+    <div class="page-footer__logo">
+     <b>Pink</b>
+    </div>
+    <section class="page-footer__social">
+     <div class="social-links">
+      <a class="social-link social-link--tw" href="#vk"></a>
+      <a class="social-link social-link--fb" href="#vk"></a>
+      <a class="social-link social-link--yout" href="#vk"></a>
+     </div>
+    </section>
+    <div class="page-footer__copyright">
+     <div class="copyright">
+      <span class="copyright__text"> Разработано</span>
+      <a class="copyright__ico" href="https://htmlacademy.ru/" target="_blank"></a>
+     </div>
+    </div>
+   </footer>
+  </body>
+</html>
