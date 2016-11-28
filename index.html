@@ -11,11 +11,7 @@
         <span class="page-header__logo-title">Pink</span>
       </div>
       <nav class="main-nav main-nav--closed">
-        <button type="button" class="main-nav__toogle">
-          <span class="icon-bar icon-bar--top"></span>
-          <span class="icon-bar icon-bar--middle icon-bar--middle-hidden"></span>
-          <span class="icon-bar icon-bar--bottom"></span>
-        </button>
+        <button type="button" class="main-nav__toogle"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
@@ -31,44 +27,41 @@
     </header>
     <main>
       <div class="application">
-        <div class="aplication__link-block">
-          <a href="#" class="aplication__link-downoload" href="#"></a>
-          <a href="#apple" class="aplication__link aplication__link--aple"></a>
-          <a href="#android" class="aplication__link aplication__link--android"></a>
-          <a href="#windows" class="aplication__link aplication__link--windows"></a>
+        <div class="application__link-block">
+          <a href="#" class="application__link-downoload" href="#"></a>
+          <a href="#apple" class="application__link application__link--aple"></a>
+          <a href="#android" class="application__link application__link--android"></a>
+          <a href="#windows" class="application__link application__link--windows"></a>
         </div>
-        <div class="aplication__remark">
-          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
+        <p class="application__remark">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <div class="dialog">
+        <b class="dialog__speech">Устали от серости магаполиса?</b>
+        <b class="dialog__speech">Нам есть, что вам предложить!</b>
       </div>
       <section class="promo">
-        <header class="promo__head">
-          <b class="promo__dialog promo__dialog--question">Устали от серости магаполиса?</b>
-          <b class="promo__dialog promo__dialog--answer">Нам есть, что вам предложить!</b>
-        </header>
         <div class="promo__block">
-          <h3 class="promo__block__title">Понимает настроение</h3>
+          <h3 class="promo__title">Понимает настроение</h3>
           <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="promo__block">
-          <h3 class="promo__block__title">Меняет мир вокруг</h3>
+          <h3 class="promo__title">Меняет мир вокруг</h3>
           <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="promo__block">
-          <h3 class="promo__block__title">Заводит новых друзей</h3>
+          <h3 class="promo__title">Заводит новых друзей</h3>
           <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
       </section>
       <div class="welcome">
         <img src="http://placehold.it/150x300">
-        <b class="welcome_text">Всем привет</b>
       </div>
       <section class="reviews">
         <div class="reviews__wrap slider">
           <h2 class="reviews__title visually-hidden">Отзывы</h2>
-          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-2">
-          <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-3">
           <ul class="reviews__items">
             <li class="reviews__item">
               <h3 class="reviews__client-name">Николай Петров</h3>
@@ -83,7 +76,7 @@
               <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи. А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </li>
           </ul>
-          <div class="reviews__toggles slider__toggles">
+          <div class="slider__toggles">
             <label class="slider-toggle" for="reviews-input-1"></label>
             <label class="slider-toggle" for="reviews-input-2"></label>
             <label class="slider-toggle" for="reviews-input-3"></label>
@@ -93,9 +86,9 @@
       <section class="rates">
         <div class="rates_wrap slider">
           <h2 class="rates-title visually-hidden">Тарифы</h2>
-          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-1" checked>
-          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-2">
-          <input class="rates-slider__input" type="radio" name="rates" id="rates-input-3">
+          <input class="hidden__input" type="radio" name="rates" id="rates-input-1" checked>
+          <input class="hidden__input" type="radio" name="rates" id="rates-input-2">
+          <input class="hidden__input" type="radio" name="rates" id="rates-input-3">
           <table class="rates__table functions">
             <tr class="functions__table-header">
               <th class="function  function--basic">
@@ -127,27 +120,28 @@
               <td class="functions__list  functions__list--yes"> Комментарии</td>
             </tr>
           </table>
-          <div class="rates slider__toggles">
+          <div class="slider__toggles">
             <label class="slider-toggle" for="rates-input-1"></label>
             <label class="slider-toggle" for="rates-input-2"></label>
             <label class="slider-toggle" for="rates-input-3"></label>
+          </div>
         </div>
       </section>
       <section class="main-contacts">
         <div class="main-contacts__info">
-          <h3>Остались вопросы?<br> Свяжитесь с нами!</h3>
-          <article class="main-contacts__data  main-contacts--call">
-            <b>Звоните:</b>
-            <a href="tel:+7(812) 555-66-66"></a>
-          </article>
-          <article class="main-contacts__data  main-contacts--mail">
-            <b>Пишите:</b>
-            <a href="mailto:html@htmlacademy.ru?subject=feedback">html@htmlacademy.ru</a>
-          </article>
-          <article class="main-contacts__data  main-contacts--address ">
-            <b>Приезжайте в гости:</b>
-            <span class="">ул. Большая Конюшенная, 19/8</span>
-          </article>
+          <h3>Остались вопросы? Свяжитесь с нами!</h3>
+          <p class="main-contacts__data">
+            <b class="main-contacts__appeal">Звоните:</b>
+            <a class="main-contacts__link" href="tel:+7(812) 555-66-66"></a>
+          </p>
+          <p class="main-contacts__data">
+            <b class="main-contacts__appeal">Пишите:</b>
+            <a class="main-contacts__link" href="mailto:html@htmlacademy.ru?subject=feedback">html@htmlacademy.ru</a>
+          </p>
+          <p class="main-contacts__data">
+            <b class="main-contacts__appeal">Приезжайте в гости:</b>
+            <span class="main-contacts__link">ул. Большая Конюшенная, 19/8</span>
+          </p>
         </div>
         <div class="main-contacts__map">
           <img src="http://placehold.it/300x300">
