@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="global-container">
     <header class="page-header">
       <div class="page-header__logo">
         <span class="page-header__logo-title">Pink</span>
@@ -88,7 +89,7 @@
             <a href="#" class="filters__btn  filters__btn--size"></a>
             <a href="#" class="filters__btn  filters__btn--color"></a>
             <a href="#" class="filters__btn  filters__btn--contrast"></a>
-            <input type="range" min="1" max="100" step="1">
+            <input class="filters__roller" type="range" min="1" max="100" step="1">
           </fieldset>
           <div class="upload__checked">
             <button class="upload__btn  upload__btn--send" type="submit">Запостить</button>
@@ -103,9 +104,9 @@
       </div>
       <section class="page-footer__social">
         <div class="social-links">
-          <a class="social-link social-link--tw" href="#vk"></a>
-          <a class="social-link social-link--fb" href="#vk"></a>
-          <a class="social-link social-link--yout" href="#vk"></a>
+          <a class="social-link social-link--tw" href="#vk" target="_blank"></a>
+          <a class="social-link social-link--fb" href="#vk" target="_blank"></a>
+          <a class="social-link social-link--yout" href="#vk" target="_blank"></a>
         </div>
       </section>
       <div class="page-footer__copyright">
