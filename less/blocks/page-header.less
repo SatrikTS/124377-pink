@@ -1,28 +1,51 @@
 .page-header{
-  background: @header-bg;
+  background: @dark-bg;
     &__logo{
       color: @header-color;
     }
       &__logo-title{
         color: @header-color;
-        font-size: @header-font-size;
-        text-transform: @text-topcase;
+        font-size: 28px;
+        text-transform: uppercase;
+        padding: 15px;
+        display: inline-block;
+        line-height: 28px;
+        position: absolute;
+      }
+    &__title{
+      background: url(../img/bg-back-mobile@1x.jpg) center top no-repeat;
+      background-size: cover;
+      text-align: center;
+      min-height: 170px;
+    }
+      &__title h1{
+        font-family: "Open Sans",  "Tahoma", sans-serif;
+        color: @header-color;
+        font-size: 22px;
+        font-weight: lighter;
+        padding-top: 35px;
       }
 }
 
 
 .main-nav{
-  background: @header-bg;
+  background: @dark-bg;
   color: @header-color;
+  text-align: right;
+    &__toogle{
+      padding: 15px;
+      margin: 12px 14px 0 0;
+    }
+
     &__list{
       padding: 0;
     }
       &__link a{
-        display: @block;
-        padding: @nav-list-padding;
-        font-weight: @font-bold;
+        display: block;
+        padding: 18px;
+        font-weight: bold;
         color: @header-color;
-        text-transform: @text-topcase;
+        text-transform: uppercase;;
         text-align: center;
         text-decoration: none;
         border-top: 1px solid #4A5662;
