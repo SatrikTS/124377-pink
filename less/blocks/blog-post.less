@@ -1,5 +1,5 @@
 .blog-post{
-  width: 90%;
+  width: 320px;
   margin: 0 auto 20px;
     &__info{
       background: @base-bg-second;
@@ -12,24 +12,20 @@
       color: #6B757F;
     }
     &__like{
-      color: @label-color;
+      color: @pink-color;
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+    p{
+      color: #283645;
+    }
+    &--best{
+      width: 340px;
     }
 }
 
-.blog-post img{
-  width: 100%;
-  display: block;
-}
-
-.blog-post p{
-  color: #283645;
-}
-
-.blog-post--best{
-  width: 100%;
-}
-
 .blog-post--best .blog-post__info{
-    width: 90%;
     margin: 0 auto 20px;
 }
