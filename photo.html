@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="global-container">
     <header class="page-header">
       <div class="page-header__logo">
         <span class="page-header__logo-title">Pink</span>
@@ -21,74 +21,88 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header__title">
-        <h1>Фотографии пользователей</h1>
+      <div class="page-header__title-block">
+        <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
     </header>
     <main>
       <section class="preview">
-        <p class="preview__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="preview-wrap">
+        <div class="preview__wrap">
+          <p class="preview__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <article class="blog-post  blog-post--best">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Анна</span>
-            <time class="blog-post__time">(5 минут назад)</time>
-            <p> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,задавайте свои вопросы!</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">215</span></span>
+            <img src="img/panorama-mobile@1x.jpg" alt="фото 1">
+            <div class="blog-post__info ">
+              <span class="blog-post__name">Анна</span>
+              <span class="blog-post__time">(5 минут назад)</span>
+              <p> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,задавайте свои вопросы!</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">215</span></span>
+            </div>
           </article>
           <article class="blog-post  blog-post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Левон</span>
-            <time class="blog-post__time">(5 часов назад)</time>
-            <p> Вчера он на луну летал, сегоня в руки к нам попал.</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">356</span></span>
+            <img src="img/photo-1-mobile@1x.jpg" alt="фото 2">
+            <div class="blog-post__info">
+              <span class="blog-post__name">Левон</span>
+              <span class="blog-post__time">(5 часов назад)</span>
+              <p> Вчера он на луну летал, сегоня в руки к нам попал.</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">356</span></span>
+            </div>
           </article>
           <article class="blog-post post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Антон</span>
-            <time class="blog-post__time">(12 часов назад)</time>
-            <p> Соседи будут рады!</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">666</span></span>
+            <img src="img/photo-2-mobile@1x.jpg" alt="фото 2">
+            <div class="blog-post__info">
+              <span class="blog-post__name">Антон</span>
+              <span class="blog-post__time">(12 часов назад)</span>
+              <p> Соседи будут рады!</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">666</span></span>
+            </div>
           </article>
           <article class="blog-post  blog-post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Борис</span>
-            <time class="blog-post__time">(20 часов назад)</time>
-            <p> Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">215</span></span>
+            <img src="img/photo-3-mobile@1x.jpg" alt="фото 3">
+            <div class="blog-post__info">
+              <span class="blog-post__name">Борис</span>
+              <span class="blog-post__time">(20 часов назад)</span>
+              <p> Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">215</span></span>
+            </div>
           </article>
           <article class="blog-post  blog-post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Сергей</span>
-            <time class="blog-post__time">(25 часов назад)</time>
-            <p> Самая кубанская в мире!</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">4</span></span>
+            <img src="img/photo-4-mobile@1x.jpg" alt="фото 4">
+            <div class="blog-post__info">
+              <span class="blog-post__name">Сергей</span>
+              <span class="blog-post__time">(25 часов назад)</span>
+              <p> Самая кубанская в мире!</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">4</span></span>
+            </div>
           </article>
           <article class="blog-post  blog-post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Максим</span>
-            <time class="blog-post__time">(40 часов назад)</time>
-            <p> Где снег-то?</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">150</span></span>
+            <img src="img/photo-5-mobile@1x.jpg" alt="фото 5">
+            <div class="blog-post__info">
+              <span class="blog-post__name">Максим</span>
+              <span class="blog-post__time">(40 часов назад)</span>
+              <p> Где снег-то?</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">150</span></span>
+            </div>
           </article>
           <article class="blog-post  blog-post--other">
-            <img src="http://placehold.it/200x130">
-            <span class="blog-post__name">Надежда</span>
-            <time class="blog-post__time">(45 часов назад)</time>
-            <p> Всем GM и взаимные лайки!</p>
-            <span class="blog-post__like like">Нравиться: <span class="like__counter">2560</span></span>
+            <div class="blog-post__info">
+              <img src="img/photo-6-mobile@1x.jpg" alt="фото 6">
+              <span class="blog-post__name">Надежда</span>
+              <span class="blog-post__time">(45 часов назад)</span>
+              <p> Всем GM и взаимные лайки!</p>
+              <span class="blog-post__like like">Нравиться: <span class="like__counter">2560</span></span>
+            </div>
           </article>
           <p class="preview__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="upload">
         <form action="/echo" method="post" class="upload__form">
-          <img src="http://placehold.it/200x130">
+          <img src="img/photo-7-mobile@1x.jpg" alt="фото 7">
           <fieldset class="upload__filters filters">
             <a href="#" class="filters__btn  filters__btn--size"></a>
             <a href="#" class="filters__btn  filters__btn--color"></a>
             <a href="#" class="filters__btn  filters__btn--contrast"></a>
-            <input type="range" min="1" max="100" step="1">
+            <input class="filters__roller" type="range" min="1" max="100" step="1">
           </fieldset>
           <div class="upload__checked">
             <button class="upload__btn  upload__btn--send" type="submit">Запостить</button>
@@ -103,9 +117,9 @@
       </div>
       <section class="page-footer__social">
         <div class="social-links">
-          <a class="social-link social-link--tw" href="#vk"></a>
-          <a class="social-link social-link--fb" href="#vk"></a>
-          <a class="social-link social-link--yout" href="#vk"></a>
+          <a class="social-link social-link--tw" href="#vk" target="_blank"></a>
+          <a class="social-link social-link--fb" href="#vk" target="_blank"></a>
+          <a class="social-link social-link--yout" href="#vk" target="_blank"></a>
         </div>
       </section>
       <div class="page-footer__copyright">
