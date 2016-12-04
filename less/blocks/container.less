@@ -1,6 +1,5 @@
 .container{
   width: 100%;
-  /*padding: 0 20px;*/
 }
 
 @media @tablet-width{
@@ -13,8 +12,9 @@
 
 @media @desktop-width{
   .container{
-    width: 960px;
+    max-width: 960px;
     padding: 0 20px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 }

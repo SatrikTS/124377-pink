@@ -1,10 +1,11 @@
 .upload{
-  background: @base-bg-second;
+  background: @base-bg;
 }
 
 .upload__form{
   margin: 20px;
   border: 1px solid red;
+  background: @base-bg-second;
 }
 
 .upload__btn{
@@ -18,4 +19,16 @@
       border-color: #DDDFE0;
       color: #DDDFE0;
     }
+}
+
+@media @tablet-width {
+  .upload__form img{
+    float: left;
+  }
+}
+
+@media @desktop-width {
+  .upload__btn{
+    display: inline-block;
+  }
 }

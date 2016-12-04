@@ -1,15 +1,14 @@
-.form{
-  border: 1px solid red;
-  margin: 20px;
-}
-
 .form__text-label{
   color: @pink-color;
   display: block;
+  &--hidden{
+    display: none;
+  }
 }
 
 .form__data{
   background: @base-bg;
+  margin: 10px 0;
   &--even{
     background: @base-bg-second;
   }
@@ -28,4 +27,62 @@
   margin: 10px auto;
   background: #2AAB6D;
   color: #fff;
+}
+
+@media @tablet-width {
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__data{
+    padding: 20px;
+    &--name{
+      order: 0;
+    }
+    &--choose{
+      order: 3;
+    }
+    &--contacts{
+      order: 2;
+    }
+    &--application{
+      order: 1;
+      background: @base-bg;
+    }
+    &--message{
+      order: 4;
+    }
+  }
+
+  .form__button{
+    order: 5;
+  }
+
+  .form__remark{
+    order: 6;
+  }
+
+  .form__text-label--hidden{
+    display: block;
+  }
+}
+
+@media @desktop-width{
+  .form{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__data{
+    padding: 20px;
+    width: 100%;
+    &--name{
+      width: 400px;
+    }
+    &--application{
+      width: 400px;
+    }
+  }
 }
