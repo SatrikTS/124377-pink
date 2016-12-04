@@ -9,3 +9,32 @@
   width: 320px;
   margin: 50px auto;;
 }
+
+.reviews__controls{
+  display: none;
+}
+
+@media @desktop-width{
+  .reviews__controls{
+    display: block;
+  }
+
+  .reviews__controller{
+    display: inline-block;
+    height: 100px;
+    width: 15px;
+    background: red;
+  }
+
+  .reviews__controller{
+    margin: 4px;
+  }
+
+  .reviews__controller--left{
+    float: left;
+  }
+
+  .reviews__controller--right{
+    float: right;
+  }
+}

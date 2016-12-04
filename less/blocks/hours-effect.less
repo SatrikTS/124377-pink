@@ -1,0 +1,28 @@
+.hours-effect{
+  display: none;
+  background: @base-bg;
+}
+
+@media @tablet-width{
+  .hours-effect{
+    display: block;
+  }
+
+  .hours-effect__info{
+    float: right;
+    width: 300px;
+  }
+
+  .hours-effect__ico{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: red;
+  }
+}
+
+@media @desktop-width {
+  .hours-effect{
+    background: @base-bg-second;
+  }
+}

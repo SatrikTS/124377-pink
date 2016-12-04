@@ -6,10 +6,48 @@
 
 .promo__block{
   margin: 20px auto;
-  width: 320px;
+  width: 300px;
   display: inline-block;
 }
 
 .promo__title{
   color: #000;
+}
+
+.promo__welcome{
+  background: #F2F2F2 url(../img/iphone-screen-mobile@1x.png) center 60px no-repeat;
+  height: 342px;
+  display: none;
+  &--friends{
+    display: block;
+  }
+}
+
+@media @tablet-width{
+  .promo__blocks{
+    width: 300px;
+    float: right;
+  }
+
+  .promo__welcome{
+    width: 300px;
+    float: left;
+  }
+}
+
+@media @desktop-width{
+  .promo__blocks{
+    float: none;
+    width: auto;
+  }
+
+  .promo__welcome{
+    display: block;
+  }
+
+  .promo__wrap{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }

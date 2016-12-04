@@ -16,9 +16,31 @@
 .reviews__client-name{
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 
 .reviews__item p{
   font-size: 14px;
   line-height: 30px;
+}
+
+.reviews__info{
+  display: none;
+}
+
+@media @tablet-width{
+  .reviews__info{
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .reviews__item{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__wrap{
+    margin: 45px auto;
+  }
+
 }
