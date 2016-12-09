@@ -1,5 +1,5 @@
 .application{
-  background: @dark-bg;
+  background: transparent;
 }
 
 .application__link-block{
@@ -15,8 +15,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  display: inline-block;
-  margin: 20px 10%;
+  display: block;
+  margin: 20px 20px;
 }
 
 .application__link{
@@ -34,4 +34,10 @@
   text-align: center;
   margin: 9px 15%;
   display: inline-block;
+}
+
+@media @tablet-width{
+  .application{
+    width: 300px;
+  }
 }

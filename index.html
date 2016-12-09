@@ -2,89 +2,130 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="global-container">
     <header class="page-header">
-      <div class="page-header__logo">
-        <span class="page-header__logo-title">Pink</span>
-      </div>
-      <nav class="main-nav main-nav--closed">
-        <button type="button" class="main-nav__toogle"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
-            <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__link"><a href="#">HTML Academy</a></li>
-          </ul>
+      <div class="page-header__wrap page-header__wrap--index">
+        <div class="page-header__logo">
+          <span class="page-header__logo-title">Pink</span>
         </div>
-      </nav>
-      <div class="page-header__title-block">
-        <img src="img/iphone-hand-mobile@1x.png" alt="mainphoto">
+        <nav class="main-nav main-nav--closed main-nav--index">
+          <div class="main-nav__header">
+            <button type="button" class="main-nav__toogle" ></button>
+          </div>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
+              <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="page-header__title-block page-header__title-block--index">
+            <h1 class="page-header__title page-header__title--index">Взгляните на жизнь иначе</h1>
+          </div>
+          <div class="application">
+            <div class="application__link-block">
+              <a href="#" class="application__link-downoload">Скачать приложение</a>
+              <a href="#apple" class="application__link application__link--apple"></a>
+              <a href="#android" class="application__link application__link--android"></a>
+              <a href="#windows" class="application__link application__link--windows"></a>
+            </div>
+            <p class="application__remark">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <div class="application">
-        <div class="application__link-block">
-          <a href="#" class="application__link-downoload">Скачать приложение</a>
-          <a href="#apple" class="application__link application__link--apple"></a>
-          <a href="#android" class="application__link application__link--android"></a>
-          <a href="#windows" class="application__link application__link--windows"></a>
-        </div>
-        <p class="application__remark">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
       <div class="dialog">
-        <b class="dialog__speech">Устали от серости магаполиса?</b>
-        <b class="dialog__speech">Нам есть, что вам предложить!</b>
+        <div class="container">
+          <b class="dialog__speech">Устали от серости магаполиса?</b>
+          <b class="dialog__speech">Нам есть, что вам предложить!</b>
+        </div>
       </div>
       <section class="promo">
-        <div class="promo__block">
-          <h3 class="promo__title">Понимает настроение</h3>
-          <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="promo__block">
-          <h3 class="promo__title">Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="promo__block">
-          <h3 class="promo__title">Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="container">
+          <div class="promo__wrap">
+            <div class="promo__blocks">
+              <div class="promo__block">
+                <h3 class="promo__title">Понимает настроение</h3>
+                <p>Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+              <div class="promo__block">
+                <h3 class="promo__title">Меняет мир вокруг</h3>
+                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </div>
+              <div class="promo__block">
+                <h3 class="promo__title">Заводит новых друзей</h3>
+                <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
+            </div>
+            <div class="promo__image">
+              <div class="promo__welcome promo__welcome--mood"></div>
+              <div class="promo__welcome promo__welcome--change"></div>
+              <div class="promo__welcome promo__welcome--friends"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </section>
-      <div class="welcome">
-      </div>
+      <section class="hours-effect">
+        <div class="container">
+          <div class="hours-effect__ico"></div>
+          <div class="hours-effect__info">
+            <h3 class="hours-effect__title">Эффект на 24 часа!</h3>
+            <p>Британские ученные провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки
+            </p>
+            <a href="#" class="hours-effect__link" target="_blank">Узнать больше о исследовании</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </section>
       <section class="reviews">
-        <div class="reviews__wrap slider">
-          <h2 class="reviews__title visually-hidden">Отзывы</h2>
-          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-1" checked>
-          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-2">
-          <input class="hidden__input" type="radio" name="reviews" id="reviews-input-3">
-          <ul class="reviews__items">
-            <li class="reviews__item">
-              <h3 class="reviews__client-name">Николай Петров</h3>
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </li>
-            <li class="reviews__item">
-              <h3 class="reviews__client-name">Андрей Андрейко</h3>
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </li>
-            <li class="reviews__item">
-              <h3 class="reviews__client-name">Барак Владимирович</h3>
-              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </li>
-          </ul>
-          <div class="slider-toggles">
-            <label class="slider-toggles__btn" for="reviews-input-1"></label>
-            <label class="slider-toggles__btn" for="reviews-input-2"></label>
-            <label class="slider-toggles__btn" for="reviews-input-3"></label>
+        <div class="container">
+          <div class="reviews__wrap slider">
+            <h2 class="reviews__title visually-hidden">Отзывы</h2>
+            <input class="hidden__input" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="hidden__input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="hidden__input" type="radio" name="reviews" id="reviews-input-3">
+            <div class="reviews__controls">
+              <span class="reviews__controller reviews__controller--left"></span>
+              <span class="reviews__controller reviews__controller--right"></span>
+            </div>
+            <ul class="reviews__items">
+              <li class="reviews__item">
+                <span class="reviews__info">25 лет, водитель трамвая</span>
+                <h3 class="reviews__client-name">Николай Петров</h3>
+                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </li>
+              <li class="reviews__item">
+                <span class="reviews__info">14 лет, директор</span>
+                <h3 class="reviews__client-name">Андрей Андрейко</h3>
+                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </li>
+              <li class="reviews__item">
+                <span class="reviews__info">55 лет, президент двух стран</span>
+                <h3 class="reviews__client-name">Барак Владимирович</h3>
+                <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи.
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </li>
+            </ul>
+            <div class="slider-toggles slider-toogles-reviews">
+              <label class="slider-toggles__btn" for="reviews-input-1"></label>
+              <label class="slider-toggles__btn" for="reviews-input-2"></label>
+              <label class="slider-toggles__btn" for="reviews-input-3"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -96,8 +137,10 @@
           <input class="hidden__input" type="radio" name="rates" id="rates-input-3">
           <table class="rates__table functions">
             <tr class="functions__table-header">
+              <th class="functions__title functions__title--clear">
+              </th>
               <th class="functions__title functions__title--basic">
-                Базовый
+                База
                 <b class="functions__price">2.99 USD</b>
               </th>
               <th class="functions__title functions__title--standart">
@@ -105,27 +148,30 @@
                 <b class="functions__price">3.99 USD</b>
               </th>
               <th class="functions__title functions__title--full">
-                Полный
+                Анлим
                 <b class="functions__price">4.99 USD</b>
               </th>
             </tr>
             <tr>
-              <td class="functions__list  functions__list--yes">Розовый фильтр </td>
-              <td class="functions__list  functions__list--no">Розовый фильтр </td>
-              <td class="functions__list  functions__list--no">Розовый фильтр </td>
+              <td class="functions__list">Розовый фильтр</td>
+              <td class="functions__list  functions__list--yes"></td>
+              <td class="functions__list  functions__list--no"></td>
+              <td class="functions__list  functions__list--no"></td>
             </tr>
             <tr>
-              <td class="functions__list  functions__list--yes"> Смайлики </td>
-              <td class="functions__list  functions__list--yes"> Смайлики </td>
-              <td class="functions__list  functions__list--no"> Смайлики </td>
+              <td class="functions__list">Смайлики</td>
+              <td class="functions__list  functions__list--yes"></td>
+              <td class="functions__list  functions__list--yes"></td>
+              <td class="functions__list  functions__list--no"></td>
             </tr>
             <tr>
-              <td class="functions__list  functions__list--yes"> Комментарии</td>
-              <td class="functions__list  functions__list--yes"> Комментарии</td>
-              <td class="functions__list  functions__list--yes"> Комментарии</td>
+              <td class="functions__list">Комментарии</td>
+              <td class="functions__list  functions__list--yes"></td>
+              <td class="functions__list  functions__list--yes"></td>
+              <td class="functions__list  functions__list--yes"></td>
             </tr>
           </table>
-          <div class="slider-toggles">
+          <div class="slider-toggles slider-toggles--table">
             <label class="slider-toggles__btn" for="rates-input-1"></label>
             <label class="slider-toggles__btn" for="rates-input-2"></label>
             <label class="slider-toggles__btn" for="rates-input-3"></label>
@@ -153,5 +199,25 @@
         </div>
       </section>
     </main>
+    <footer class="page-footer page-footer--index">
+      <div class="container">
+        <div class="page-footer__logo">
+          <b>Pink</b>
+        </div>
+        <section class="page-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--tw" href="#vk" target="_blank"></a>
+            <a class="social-link social-link--fb" href="#vk" target="_blank"></a>
+            <a class="social-link social-link--yout" href="#vk" target="_blank"></a>
+          </div>
+        </section>
+        <div class="page-footer__copyright">
+          <div class="copyright">
+            <span class="copyright__text"> Разработано</span>
+            <a class="copyright__ico" href="https://htmlacademy.ru/" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

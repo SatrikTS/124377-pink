@@ -1,14 +1,17 @@
 .blog-post{
-  width: 300px;
+  width: 310px;
   margin: 0 auto 20px;
   &--best{
-    width: 320px;
+    width: auto;
   }
 }
 
 .blog-post__info{
   background: @base-bg-second;
   padding: 5px;
+  &--best{
+    margin: 0 20px;
+  }
 }
 
 .blog-post__name{
@@ -30,4 +33,28 @@
 
 .blog-post p{
   color: #283645;
+}
+
+@media @tablet-width{
+  .blog-post{
+    width: 45%;
+    &--best{
+    width: auto;
+    }
+  }
+}
+
+@media @desktop-width {
+  .blog-post{
+    width: 30%;
+    margin: 10px 0;
+    &--best{
+      width: 100%;
+    }
+  }
+  .blog-post__info--best{
+    margin: 0 auto;
+    max-width: 960px;
+    box-sizing: border-box;
+  }
 }

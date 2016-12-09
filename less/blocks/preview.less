@@ -9,3 +9,46 @@
   width: 320px;
   margin: 50px auto;;
 }
+
+.reviews__controls{
+  display: none;
+}
+
+@media @tablet-width {
+  .preview__text{
+    width: 450px;
+  }
+
+  .preview__similar{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop-width{
+  .reviews__controls{
+    display: block;
+  }
+
+  .reviews__controller{
+    display: inline-block;
+    height: 100px;
+    width: 15px;
+    background: red;
+  }
+
+  .reviews__controller{
+    margin: 4px;
+  }
+
+  .reviews__controller--left{
+    float: left;
+  }
+
+  .reviews__controller--right{
+    float: right;
+  }
+}
