@@ -1,5 +1,6 @@
 .application{
   background: transparent;
+  text-align: center;
 }
 
 .application__link-block{
@@ -16,16 +17,14 @@
   font-size: 18px;
   line-height: 20px;
   display: block;
-  margin: 28px auto;
-  max-width: 280px;
+  margin: 23px auto 29px;
+  max-width: 275px;
 }
 
 .application__link{
   display: inline-block;
-  vertical-align: baseline;
-  height: 60px;
-  width: 60px;
-  margin: 0 10px;
+  vertical-align: bottom;;
+  margin: 0 16px;
 }
 
 .application__remark{
@@ -33,7 +32,7 @@
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
-  margin: 6px 20px 30px 20px;
+  margin: 18px 20px 30px 20px;
   display: inline-block;
   vertical-align: top;
   line-height: 24px;
@@ -41,6 +40,16 @@
 
 @media @tablet-width{
   .application{
-    width: 300px;
+    width: 340px;
+  }
+
+  .application__link-downoload{
+    max-width: 295px;
+    margin: 23px auto 43px;
+  }
+
+  .application__remark{
+    margin: 33px 15px 30px 15px;
+    font-size: 18px;
   }
 }
