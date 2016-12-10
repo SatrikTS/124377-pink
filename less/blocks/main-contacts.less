@@ -60,3 +60,24 @@
     overflow: hidden;
   }
 }
+
+@media @desktop-width{
+  .main-contacts__info{
+    .container-desktop;
+  }
+
+  .main-contacts__data-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-contacts__data{
+    order: 1;
+    &--phone{
+      order: 0;
+    }
+    &--mail{
+      order: 2;
+    }
+  }
+}

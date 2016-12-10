@@ -5,6 +5,10 @@
 
 @media @tablet-width{
   .hours-effect{
+    display: block;
+  }
+
+  .hours-effect__wrap{
     display: flex;
     padding: 58px 0 40px;
   }
@@ -50,5 +54,9 @@
 @media @desktop-width {
   .hours-effect{
     background: @base-bg-second;
+  }
+
+  .hours-effect__wrap{
+    .container-desktop;
   }
 }
