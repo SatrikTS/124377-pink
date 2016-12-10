@@ -35,14 +35,33 @@
 }
 
 @media @tablet-width{
+  .promo{
+    padding: 52px 0 29px;
+  }
+
+  .promo__wrap{
+    .container-tablet;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .promo__blocks{
-    width: 300px;
-    float: right;
+    width: 100%;
+    padding-left: 12px;
+  }
+
+  .promo__block{
+    text-align: left;
+    margin: 4px auto 13px;
+    width: 312px;
+  }
+
+  .promo__text{
+    width: auto;
   }
 
   .promo__welcome{
     width: 300px;
-    float: left;
   }
 }
 
@@ -50,6 +69,7 @@
   .promo__blocks{
     float: none;
     width: auto;
+    display: flex;
   }
 
   .promo__welcome{
