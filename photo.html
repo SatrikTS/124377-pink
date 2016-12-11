@@ -23,7 +23,7 @@
           </div>
         </nav>
         <div class="page-header__title-block">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
+          <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
         </div>
       </div>
     </header>
@@ -91,23 +91,22 @@
               </article>
             </div>
           </div>
-          <p class="preview__text preview__text--end">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="preview__text preview__text--end">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="upload">
         <form action="/echo" method="post" class="upload__form">
           <img src="img/photo-7-mobile@1x.jpg" alt="фото 7">
           <fieldset class="upload__filters filters">
-            <a href="#" class="filters__btn  filters__btn--size"></a>
-            <a href="#" class="filters__btn  filters__btn--color"></a>
-            <a href="#" class="filters__btn  filters__btn--contrast"></a>
-            <input class="filters__roller" type="range" min="1" max="100" step="1">
+            <a href="#" class="filters__btn  filters__btn--size"></a><input class="filters__roller" type="range" min="1" max="100" step="1">
+            <a href="#" class="filters__btn  filters__btn--color"></a><input class="filters__roller" type="range" min="1" max="100" step="1">
+            <a href="#" class="filters__btn  filters__btn--contrast"></a><input class="filters__roller" type="range" min="1" max="100" step="1">
+            <input class="filters__roller filters__roller--general" type="range" min="1" max="100" step="1">
           </fieldset>
           <div class="upload__checked">
             <button class="upload__btn  upload__btn--send" type="submit">Запостить</button>
             <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
           </div>
-          <div class="clearfix"></div>
         </form>
       </section>
     </main>

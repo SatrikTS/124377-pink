@@ -3,12 +3,32 @@
 }
 
 .contest__text{
+  font-size: 14px;
+  line-height: 30px;
+  color: #263645;
   text-align: center;
+  width: auto;
+  margin: 44px auto 30px;
+  padding: 0 6%;
+  &--hidden{
+    display: none;
+  }
+}
+
+.contest__form{
+  display: flex;
+  flex-direction: column;
 }
 
 @media @tablet-width {
   .contest__text{
     width: 500px;
     margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 90px auto 18px;
+    &--hidden{
+      display: block;
+    }
   }
 }

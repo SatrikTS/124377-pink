@@ -6,7 +6,9 @@
     width: auto;
   }
   &--other{
-    padding: 0 20px;
+    margin: 0 auto 21px;
+    width: 87%;
+    background: @base-bg-second;
   }
 }
 
@@ -56,24 +58,43 @@
 
 @media @tablet-width{
   .blog-post{
-    width: 45%;
+    width: 48%;
+    margin: 10px 0;
+    img{
+      height: 300px;
+    }
     &--best{
     width: auto;
+    margin-bottom: 38px;
+      img{
+        height: 509px;
+      }
+    }
+    &--other{
+      height: 455px;
+    }
+  }
+
+.blog-post__info{
+  padding: 23px 18px 26px;
+  &--best{
+    margin: 0 40px;
+    padding: 16px 10px 0px 27px;
     }
   }
 }
 
 @media @desktop-width {
   .blog-post{
-    width: 30%;
-    margin: 10px 0;
+    width: 300px;
+    margin: 0 0 55px;
     &--best{
       width: 100%;
     }
   }
   .blog-post__info--best{
     margin: 0 auto;
-    max-width: 960px;
+    width: 940px;
     box-sizing: border-box;
   }
 }
