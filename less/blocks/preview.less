@@ -4,14 +4,21 @@
 
 .preview__text{
   font-size: 14px;
+  line-height: 30px;
   color: @dark-text-color;
   text-align: center;
-  width: 320px;
-  margin: 50px auto;;
+  width: auto;;
+  margin: 44px auto 50px;
+  padding: 0 11%;
+  &--end{
+    margin: 21px 0 42px;
+    padding: 0 16%;
+  }
 }
 
-.reviews__controls{
-  display: none;
+.preview__similar{
+  display: flex;
+  flex-direction: column;
 }
 
 @media @tablet-width {
@@ -29,26 +36,5 @@
 }
 
 @media @desktop-width{
-  .reviews__controls{
-    display: block;
-  }
 
-  .reviews__controller{
-    display: inline-block;
-    height: 100px;
-    width: 15px;
-    background: red;
-  }
-
-  .reviews__controller{
-    margin: 4px;
-  }
-
-  .reviews__controller--left{
-    float: left;
-  }
-
-  .reviews__controller--right{
-    float: right;
-  }
 }

@@ -13,7 +13,7 @@
 
 .promo__title{
   color: #000;
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans Bold", "Tahoma";
   font-size: 18px;
   margin-bottom: 12px;
 }
@@ -66,6 +66,10 @@
 }
 
 @media @desktop-width{
+  .promo{
+    padding: 0 0 35px;
+  }
+
   .promo__blocks{
     float: none;
     width: auto;
@@ -74,6 +78,9 @@
 
   .promo__welcome{
     display: block;
+    width: 33.3%;
+    background-position: center 0;
+    background-size: 55%;
   }
 
   .promo__wrap{
@@ -84,6 +91,23 @@
 
   .promo__image{
     display: flex;
+  }
+
+  .promo__block{
+    text-align: center;
+  }
+
+  .promo__title{
+    font-size: 30px;
+    line-height: 30px;
+    width: 230px;
+    margin: 60px auto 40px;
+  }
+
+  .promo__text{
+    font-size: 18px;
+    line-height: 30px;
+    width: 235px;
   }
 
 }

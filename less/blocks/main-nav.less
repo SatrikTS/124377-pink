@@ -32,18 +32,15 @@
 
 .main-nav__link a{
   display: block;
-  padding: 19px 0 17px;
+  padding: 19px 0 18px;
   color: @header-color;
   text-transform: uppercase;;
   text-align: center;
   text-decoration: none;
-  border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
   font-size: 19px;
-  &:first-child{
-    box-shadow: 0px -1px 1px 0px #000001;
+  box-shadow: 0px -1px 1px 0px #000001;
   }
-}
 
 @media @tablet-width{
   .main-nav__header {
@@ -66,6 +63,20 @@
 
   .main-nav__link{
     display: inline-block;
+  }
+
+  .main-nav__link a{
+    font-size: 18px;
+    text-transform: none;
+    border: none;
+    box-shadow: none;
+    margin-left: 80px;
+    line-height: 18px;
+  }
+
+  .main-nav__list{
+    padding: 28px 10px;
+    background: url("../img/logo-top.svg") 21px 22px no-repeat;
   }
 
   .main-nav__toogle{

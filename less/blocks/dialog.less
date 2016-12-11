@@ -22,6 +22,7 @@
 
   .dialog__speech:last-child{
     width: 340px;
+    line-height: 42px;
   }
 
   .dialog__speech {
@@ -33,5 +34,16 @@
 }
 
 @media @desktop-width {
+  .dialog{
     .container-desktop;
+    padding: 80px 20px;
+    }
+
+  .dialog__speech{
+    font-size: 50px;
+    &:last-child{
+      width: 550px;
+      line-height: 60px;
+    }
   }
+}

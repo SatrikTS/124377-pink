@@ -38,7 +38,7 @@
     margin: 90px auto;
   }
 
-  .hours-effect p{
+  .hours-effect__text{
     font-size: 14px;
     line-height: 24px;
     max-width: 315px;
@@ -54,9 +54,41 @@
 @media @desktop-width {
   .hours-effect{
     background: @base-bg-second;
+    padding: 35px 0 65px;
   }
 
   .hours-effect__wrap{
     .container-desktop;
   }
+
+  .hours-effect__ico {
+    width: 375px;
+    height: 350px;
+  }
+
+  .hours-effect__info {
+    width: 560px;
+    padding: 8px 0 22px 0;
+    margin-top: 60px;
+  }
+
+  .hours-effect__title{
+    line-height: 30px;
+    margin-bottom: 27px;
+    br{
+      display: none;
+    }
+  }
+
+  .hours-effect__text{
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .hours-effect__link {
+    font-size: 18px;
+  }
+
 }

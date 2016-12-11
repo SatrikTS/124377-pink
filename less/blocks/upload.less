@@ -1,24 +1,36 @@
 .upload{
-  background: @base-bg;
+  background: @base-bg-second;
+  padding: 20px 18px 32px;
 }
 
 .upload__form{
-  margin: 20px;
-  border: 1px solid red;
   background: @base-bg-second;
+  display: flex;
+  flex-direction: column;
 }
 
+.upload__filters{
+  margin-top: 35px;
+}
 .upload__btn{
+  font-family: "Open Sans Bold";
   border-radius: 30px;
-  padding: 15px;
+  padding: 9px 0;
   border: 3px solid @pink-color;
+  color: @pink-color;
   display: block;
   margin: 10px auto;
-  width: 270px;
+  width: 280px;
+  font-size: 19px;
+  line-height: 30px;
     &--cancel{
       border-color: #DDDFE0;
       color: #DDDFE0;
     }
+}
+
+.upload__checked{
+  margin-top: 33px;
 }
 
 @media @tablet-width {

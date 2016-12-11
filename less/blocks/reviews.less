@@ -2,6 +2,9 @@
   background: @base-bg;
 }
 
+.reviews__controls{
+  display: none;
+}
 
 .reviews__items{
   list-style: none;
@@ -87,11 +90,71 @@
 }
 
 @media @desktop-width {
-  .reviews{
-    padding: 60px 20px;
+  .reviews {
+      padding: 150px 20px 60px;
   }
 
   .reviews__wrap{
     .container-desktop;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px 100px;
+  }
+
+  .reviews__items{
+    width: 300%;
+    position: absolute;
+    left: 0;
+  }
+
+  .reviews__item{
+    display: block;
+    float: left;
+    width: 33%;
+  }
+
+  .reviews__item p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__client-name{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__controls{
+    display: block;
+  }
+
+  .reviews__controller{
+    display: inline-block;
+    height: 60px;
+    width: 15px;
+    background: #777;
+    position: relative;
+    z-index: 10;
+  }
+
+  .reviews__controller{
+    margin: 70px 4px 0;
+  }
+
+  .reviews__controller--left{
+    float: left;
+  }
+
+  .reviews__controller--right{
+    float: right;
+  }
+
+  .reviews__inner {
+    width: 680px;
+    margin: 0 auto;
   }
 }

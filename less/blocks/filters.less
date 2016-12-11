@@ -1,9 +1,24 @@
 .filters{
-  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .filters__btn{
   display: inline-block;
   padding: 20px;
-  background: red;
+  &--size{
+    background: url("../img/icon-editor-crop.svg") no-repeat;
+  }
+  &--color{
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+  }
+  &--contrast{
+    background: url("../img/icon-editor-contrast.svg") no-repeat;
+  }
+}
+
+.filters__roller{
+  margin-top: 37px;
 }

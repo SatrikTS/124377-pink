@@ -1,8 +1,17 @@
 .page-footer{
   background: @base-bg;
+  padding-top: 40px;
   &--index{
     display: none;
   }
+}
+
+.page-footer__logo{
+  display: block;
+  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+  width: 146px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 
@@ -13,10 +22,11 @@
   }
 
   .page-footer__logo{
-    display: inline-block;
     text-align: center;
-    background: url("../img/logo-pink-blue-mobile.svg") 21px 36px no-repeat;
+    background-position: 21px 36px;
     width: 33%;
+    display: inline-block;
+    height: 105px;
   }
 
   .page-footer__social{
