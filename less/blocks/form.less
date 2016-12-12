@@ -19,6 +19,9 @@
   text-align: center;
   width: 230px;
   margin: 0 auto;
+  &--hidden{
+    display: none;
+  }
 }
 
 .form__text-input {
@@ -32,8 +35,9 @@
 
 .form__data{
   background: @base-bg;
-  margin: 0px 0px 26px;
+  margin: 0px 0px 24px;
   padding: 5.5px 20px 0;
+  border-color: transparent;
   &--even{
     background: @base-bg-second;
     padding: 37px 20px;
@@ -85,12 +89,16 @@
 
 @media @tablet-width {
   .form{
+    .container-tablet;
     display: flex;
     flex-direction: column;
+    padding: 55px 20px;
   }
 
   .form__data{
-    padding: 20px;
+    border-color: #e5e5e5;
+    padding: 0 20px;
+    position: relative;
     &--name{
       order: 0;
     }
@@ -99,6 +107,7 @@
     }
     &--contacts{
       order: 2;
+      margin: 24px 16px 67px 24px;
     }
     &--application{
       order: 1;
@@ -107,6 +116,30 @@
     &--message{
       order: 4;
     }
+    &--name{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      align-items: baseline;
+      height: 310px;
+      border-color: transparent;
+    }
+    &--even{
+      padding: 13px 20px 50px;
+      margin: 24px 16px 44px 24px;
+    }
+  }
+
+  .form__header-label{
+    display: block;
+    width: 380px;
+    background: #fff;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -190px;
   }
 
   .form__button{
@@ -117,8 +150,21 @@
     order: 6;
   }
 
-  .form__text-label--hidden{
-    display: block;
+  .form__text-label{
+    margin: 0px 17px 0px 0px;
+    top: -13px;
+    left: 50%;
+    &--hidden{
+      display: block;
+    }
+  }
+  .form__text-input{
+    width: 75%;
+    flex-grow: 1;
+  }
+
+  .form__radio-text{
+    padding: 13px 0 7px 98px;
   }
 }
 

@@ -6,17 +6,26 @@ switchMenu.addEventListener("click", function (event) {
   openMenu.style.display = (openMenu.style.display == 'none') ? 'block' : 'none'
 });
 
-var sliderContainer = document.querySelector(".reviews__items");
+var sliderElement = document.querySelectorAll(".reviews__item");
 var leftControl = document.querySelector(".reviews__controller--left");
 var rightControl = document.querySelector(".reviews__controller--right");
-var step = 100;
+
 
 leftControl.addEventListener("click", function(event){
   event.preventDefault();
-  sliderContainer.style.left= -step + "%";
+  for (var i=0; i<sliderElement.length; i++){
+
+      sliderElement[i].classList.remove("reviews__item--show");
+      sliderElement[i=i+1].classList.add("reviews__item--show");
+}
+
 });
 
 rightControl.addEventListener("click", function(event){
   event.preventDefault();
-  sliderContainer.style.left= step + "%";
+  for (var i=0; i<sliderElement.length; i++){
+      sliderElement[i].classList.remove("reviews__item--show");
+      sliderElement[i=i-1].classList.add("reviews__item--show");
+}
+
 });

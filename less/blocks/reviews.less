@@ -102,15 +102,19 @@
   }
 
   .reviews__items{
-    width: 300%;
-    position: absolute;
-    left: 0;
+    position: relative;
   }
 
+  /*для слайдера. Так как айдишники выше перебивают.
+  Когда я делал слайдер на css через id и label.
+  Каскадность тоже нельзя*/
   .reviews__item{
-    display: block;
-    float: left;
-    width: 33%;
+    display: none;
+    position: absolute;
+    width: 100%;
+    &--show{
+      display: block;
+    }
   }
 
   .reviews__item p {
