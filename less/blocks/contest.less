@@ -21,6 +21,9 @@
 }
 
 @media @tablet-width {
+  .contest{
+    .container-tablet;
+  }
   .contest__text{
     width: 500px;
     margin: 0 auto;
@@ -29,6 +32,19 @@
     margin: 90px auto 18px;
     &--hidden{
       display: block;
+    }
+  }
+}
+
+
+@media @desktop-width {
+  .contest{
+    .container-desktop;
+  }
+  .contest__text{
+    width: 760px;
+    &--hidden{
+      display: inline;
     }
   }
 }

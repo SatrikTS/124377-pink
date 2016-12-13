@@ -51,10 +51,14 @@
           </fieldset>
           <fieldset class="form__data form__data--contacts">
             <span class="form__header-label form__header-label--hidden">Контактная информация</span>
-            <label class="form__text-label" for="phone">Номер телефона</label>
-            <input class="form__text-input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-            <label class="form__text-label" for="email">Адресок почты</label>
-            <input class="form__text-input" type="email" name="email" id="email" required placeholder="Введите почту*">
+            <div class="form__contacts-block contacts-unit">
+              <label class="form__text-label contacts-unit__label" for="phone">Номер телефона</label>
+              <input class="form__text-input contacts-unit__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__contacts-block contacts-unit">
+              <label class="form__text-label contacts-unit__label" for="email">Адресок почты</label>
+              <input class="form__text-input contacts-unit__input" type="email" name="email" id="email" required placeholder="Введите почту*">
+            </div>
           </fieldset>
           <fieldset class="form__data form__data--even form__data--application">
             <span class="form__header-label">С каким приложением путешествовали?</span>
@@ -64,10 +68,12 @@
           </fieldset>
           <fieldset class="form__data form__data--message">
             <span class="form__header-label" for="review">Опишите свои эмоции</span>
-            <textarea class="form__textarea" name="review" id="review" rows="5">Можно прям в карсках, не стесняясь в выражениях</textarea>
+            <textarea class="form__textarea" name="review" id="review">Можно прям в карсках, не стесняясь в выражениях</textarea>
           </fieldset>
-          <input class="form__button func-btn" type="submit" value="Отправить форму">
-          <span class="form__remark"><b>*</b> - обязательные поля</span>
+          <div class="form__bottom">
+            <input class="form__button func-btn" type="submit" value="Отправить форму">
+            <span class="form__remark"><b>*</b> - обязательные поля</span>
+          </div>
           <div class="form__popup popup popup--error">
             <h3 class="popup__title">Что-то пошло не так</h3>
             <p class="popup__text">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
