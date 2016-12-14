@@ -4,19 +4,36 @@
 
 .preview__text{
   font-size: 14px;
+  line-height: 30px;
   color: @dark-text-color;
   text-align: center;
-  width: 320px;
-  margin: 50px auto;;
+  width: auto;;
+  margin: 44px auto 50px;
+  padding: 0 11%;
+  &--end{
+    margin: 21px 0 42px;
+    padding: 0 16%;
+  }
 }
 
-.reviews__controls{
-  display: none;
+.preview__similar{
+  display: flex;
+  flex-direction: column;
 }
 
 @media @tablet-width {
+  .preview__wrap{
+    padding: 92px 0px 40px;
+  }
+
   .preview__text{
     width: 450px;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 auto 75px;
+    &--end{
+      margin: 56px auto 29px;
+    }
   }
 
   .preview__similar{
@@ -24,31 +41,27 @@
     flex-wrap: wrap;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 40px;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 @media @desktop-width{
-  .reviews__controls{
-    display: block;
+  .preview__wrap{
+      padding: 95px 0px 54px;
   }
 
-  .reviews__controller{
-    display: inline-block;
-    height: 100px;
-    width: 15px;
-    background: red;
+  .preview__text{
+    width: 570px;
+    margin-bottom: 90px;
+    &--end{
+      margin: 9px auto;
+    }
   }
 
-  .reviews__controller{
-    margin: 4px;
-  }
-
-  .reviews__controller--left{
-    float: left;
-  }
-
-  .reviews__controller--right{
-    float: right;
+  .preview__similar{
+    max-width: 940px;
+    padding: 0 10px;
   }
 }

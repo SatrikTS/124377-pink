@@ -1,20 +1,49 @@
 .dialog{
   background: @base-bg;
   text-align: center;
+  padding-top: 43px;
+  font-family: "Open Sans Light" , "Tahoma  ";
 }
 
 .dialog__speech{
   color: @dark-text-color;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: lighter;
-  margin: 14px 0;
+  margin: 0 0 33px 0;
   width: 100%;
   display: inline-block;
 }
 
 @media @tablet-width{
+  .dialog{
+    padding: 44px 0 47px;
+  }
+
   .dialog__speech:last-child{
-    width: 320px;
+    width: 340px;
+    line-height: 42px;
+  }
+
+  .dialog__speech {
+      font-size: 40px;
+      margin: 7px 0 4px;
+      line-height: 42px;
+  }
+
+}
+
+@media @desktop-width {
+  .dialog{
+    .container-desktop;
+    padding: 80px 20px;
+    }
+
+  .dialog__speech{
+    font-size: 50px;
+    &:last-child{
+      width: 550px;
+      line-height: 60px;
+    }
   }
 }

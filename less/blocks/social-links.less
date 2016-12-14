@@ -1,19 +1,34 @@
 .social-links{
-  border: 1px solid red;
   margin: 40px 0;
   text-align: center;
-  padding: 20px;
+  padding: 0;
 }
 
 .social-link{
-  padding: 20px;
-  background: red;
+  width: 47px;
+  height: 47px;
   display: inline-block;
   vertical-align: top;
+  border-radius: 100%;
+  border: 2px solid #EAEAEA;
+  margin: 0px 6px;
+  &--tw{
+    background: url("../img/icon-twitter.svg") no-repeat;
+    background-position: 17px 18px;
+  }
+  &--fb{
+    background: url("../img/icon-facebook.svg") no-repeat;
+    background-position: 20px 14px;
+  }
+  &--yout{
+    background: url("../img/icon-youtube.svg") no-repeat;
+    background-position: 17px 18px;
+  }
 }
 
 @media @tablet-width{
   .social-links{
     margin: 0;
+    padding: 40px 0px 14px 4px;
   }
 }

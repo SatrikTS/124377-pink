@@ -1,44 +1,50 @@
 .page-footer{
   background: @base-bg;
+  padding-top: 40px;
   &--index{
     display: none;
   }
 }
 
 .page-footer__logo{
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 28px;
-  line-height: 28px;
+  display: block;
+  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+  width: 146px;
+  height: 40px;
+  margin: 0 auto;
 }
 
-.page-footer__copyright{
-  border: 1px solid #000;
-  margin: 20px;
-}
 
 @media @tablet-width{
-  .page-footer--index{
-    display: block;
+  .page-footer{
+    .container-tablet;
+    display: flex;
   }
 
   .page-footer__logo{
+    text-align: center;
+    background-position: 21px 36px;
+    width: 33%;
     display: inline-block;
-    vertical-align: top;
-    width: 30%;
-
+    height: 105px;
   }
 
   .page-footer__social{
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 33%;
   }
 
   .page-footer__copyright{
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 33%;
+    margin: 0;
+  }
+}
+
+@media @desktop-width{
+  .page-footer{
+    .container-desktop;
   }
 }

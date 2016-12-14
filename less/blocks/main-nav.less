@@ -2,17 +2,21 @@
   color: @header-color;
   text-align: right;
   &--index{
-    min-height: 460px;
+  /*  min-height: 460px;*/
   }
 }
 
 .main-nav__header{
-  background: @dark-bg;
+  background: url("../img/logo-pink-white-mobile.svg") 21px 22px no-repeat;
+  background-color: @dark-bg;
 }
 
 .main-nav__toogle{
-  padding: 15px;
-  margin: 12px 14px 0 0;
+  margin: 20px 20px 25px 0;
+  background: url("../img/icon-menu-burger.svg") no-repeat;
+  border: none;
+  height: 24px;
+  width: 50px
 }
 
 .main-nav__wrapper{
@@ -28,14 +32,24 @@
 
 .main-nav__link a{
   display: block;
-  padding: 18px;
-  font-weight: bold;
+  padding: 19px 0 18px;
   color: @header-color;
   text-transform: uppercase;;
   text-align: center;
   text-decoration: none;
-  border-top: 1px solid #4A5662;
-  border-bottom: 1px solid #1C1C1C;
+  border-bottom: 1px solid #000001;
+  font-size: 19px;
+  box-shadow: 0px -1px 1px 0px #000001;
+  }
+
+@media @tablet-width{
+  .main-nav__header {
+    background: url("../img/logo-pink-white-mobile.svg") 113px 44px no-repeat;
+  }
+
+  .main-nav__toogle{
+    margin: 43px 23px;
+  }
 }
 
 @media @desktop-width{
@@ -49,5 +63,28 @@
 
   .main-nav__link{
     display: inline-block;
+  }
+
+  .main-nav__link a{
+    font-size: 18px;
+    text-transform: none;
+    border: none;
+    box-shadow: none;
+    margin-left: 80px;
+    line-height: 18px;
+  }
+
+  .main-nav__list{
+    padding: 28px 10px;
+    background: url("../img/logo-top.svg") 21px 22px no-repeat;
+  }
+
+  .main-nav__toogle{
+    margin: 43px 23px;
+  }
+
+  .main-nav {
+    max-width: 960px;
+    margin: 0 auto;
   }
 }

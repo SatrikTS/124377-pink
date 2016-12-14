@@ -1,9 +1,59 @@
 .filters{
-  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .filters__btn{
   display: inline-block;
-  padding: 20px;
-  background: red;
+  height: 48px;
+  width: 48px;
+  &--size{
+    background: url("../img/icon-editor-crop.svg") no-repeat;
+  }
+  &--color{
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+  }
+  &--contrast{
+    background: url("../img/icon-editor-contrast.svg") no-repeat;
+  }
+}
+
+.filters__roller{
+  margin-top: 37px;
+  display: none;
+  &--general{
+    display: block;
+  }
+}
+
+@media @tablet-width{
+  .filters{
+    flex-direction: column;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 218px;
+    padding-left: 35px;
+  }
+
+  .filters__roller{
+    margin-top: 0;
+    display: block;
+    &--general{
+      display: none;
+    }
+  }
+}
+
+@media @desktop-width{
+  .filters{
+    width: 500px;
+  }
+
+  .filters__roller{
+    width: 81%;
+  }
 }

@@ -1,5 +1,6 @@
 .application{
   background: transparent;
+  text-align: center;
 }
 
 .application__link-block{
@@ -7,7 +8,7 @@
 }
 
 .application__link-downoload{
-  padding: 15px;
+  padding: 15px 0;
   color: @inverse-text-color;
   border-radius: 30px;
   border: 3px solid #fff;
@@ -16,15 +17,14 @@
   font-size: 18px;
   line-height: 20px;
   display: block;
-  margin: 20px 20px;
+  margin: 23px auto 29px;
+  max-width: 275px;
 }
 
 .application__link{
   display: inline-block;
-  height: 60px;
-  width: 60px;
-  background: red;
-  margin: 0 10px;
+  vertical-align: bottom;;
+  margin: 0 16px;
 }
 
 .application__remark{
@@ -32,12 +32,34 @@
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
-  margin: 9px 15%;
+  margin: 18px 20px 30px 20px;
   display: inline-block;
+  vertical-align: top;
+  line-height: 24px;
 }
 
 @media @tablet-width{
   .application{
-    width: 300px;
+    width: 340px;
+  }
+
+  .application__link-downoload{
+    max-width: 295px;
+    margin: 23px auto 43px;
+  }
+
+  .application__remark{
+    margin: 33px 15px 30px 15px;
+    font-size: 18px;
+  }
+}
+
+@media @desktop-width{
+  .application__link-downoload{
+    margin: 45px auto 65px;
+    font-size: 21px;
+  }
+  .application__remark{
+    margin: 60px 15px 40px 15px;
   }
 }

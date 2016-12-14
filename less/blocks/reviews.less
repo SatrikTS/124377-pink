@@ -2,15 +2,19 @@
   background: @base-bg;
 }
 
-.reviews__wrap{
-    border: 1px solid #ccc;
-    margin: 45px;
+.reviews__controls{
+  display: none;
 }
 
 .reviews__items{
   list-style: none;
-  padding: 0;
+  padding: 42px 0 0 0;
   text-align: center;
+  margin: 0 auto 33px;
+}
+
+.reviews__item{
+  display: none;
 }
 
 .reviews__client-name{
@@ -21,26 +25,140 @@
 
 .reviews__item p{
   font-size: 14px;
-  line-height: 30px;
+  line-height: 29px;
+  width: 87%;
+  margin: 14px 20px;
 }
 
 .reviews__info{
   display: none;
 }
 
+#reviews-input-1:checked ~ .slider-toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .slider-toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .slider-toggles label[for="reviews-input-3"] {
+  border: 3px solid #283645;
+  background: #fff;
+}
+
+#reviews-input-1:checked ~ .reviews__items .reviews__item:nth-child(1){
+  display: block;
+}
+
+#reviews-input-2:checked ~ .reviews__items .reviews__item:nth-child(2){
+  display: block;
+}
+
+#reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3){
+  display: block;
+}
+
 @media @tablet-width{
+  .reviews{
+    .container-tablet();
+  }
+
   .reviews__info{
     display: inline-block;
     font-size: 14px;
   }
 
-  .reviews__item{
+  .reviews__inner{
     display: flex;
     flex-direction: column-reverse;
   }
 
   .reviews__wrap{
-    margin: 45px auto;
+    margin: 0 auto;
   }
 
+  .reviews__items{
+    padding: 20px 0 0 0;
+  }
+
+  .reviews__item p {
+    font-size: 17px;
+    line-height: 29px;
+    width: 100%;
+    margin: 14px 0px;
+  }
+
+  .reviews__client-name{
+    margin: 23px 0 7px;
+    font-size: 20px;
+  }
+}
+
+@media @desktop-width {
+  .reviews {
+      padding: 150px 20px 60px;
+  }
+
+  .reviews__wrap{
+    .container-desktop;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px 100px;
+  }
+
+  .reviews__items{
+    position: relative;
+  }
+
+  /*для слайдера. Так как айдишники выше перебивают.
+  Когда я делал слайдер на css через id и label.
+  Каскадность тоже нельзя*/
+  .reviews__item{
+    display: none;
+    position: absolute;
+    width: 100%;
+    &--show{
+      display: block;
+    }
+  }
+
+  .reviews__item p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__client-name{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__controls{
+    display: block;
+  }
+
+  .reviews__controller{
+    display: inline-block;
+    height: 60px;
+    width: 15px;
+    background: #777;
+    position: relative;
+    z-index: 10;
+  }
+
+  .reviews__controller{
+    margin: 70px 4px 0;
+  }
+
+  .reviews__controller--left{
+    float: left;
+  }
+
+  .reviews__controller--right{
+    float: right;
+  }
+
+  .reviews__inner {
+    width: 680px;
+    margin: 0 auto;
+  }
 }

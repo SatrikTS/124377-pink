@@ -5,5 +5,26 @@
 .copyright__ico{
   display: inline-block;
   padding: 20px;
-  background: red;
+  text-decoration: none;
+  position: relative;
+  padding: 3px 41px 3px 0;
+  font-size: 15px;
+  color: #000;
+  &::after{
+    position: absolute;
+    content: "";
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
+    width: 30px;
+    height: 35px;
+    right: 1px;
+    top: 1px;
+  }
+}
+
+@media @tablet-width{
+  .copyright{
+    text-align: right;
+    margin-top: 50px;
+    padding-right: 10px;
+  }
 }

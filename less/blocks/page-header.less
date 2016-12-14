@@ -1,10 +1,13 @@
 .page-header{
-  background: url(../img/bg-back-mobile@1x.jpg) center top no-repeat;
   background-color: #1D2631;
 }
 
-.page-header__wrap--index{
-  background: url(../img/iphone-hand-mobile@1x.png) no-repeat center 176px;
+.page-header__view{
+  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+  display: inline-block;
+  height: 395px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .page-header__logo{
@@ -13,52 +16,97 @@
 
 .page-header__logo-title{
   color: @header-color;
-  font-size: 28px;
-  text-transform: uppercase;
-  padding: 15px;
-  display: inline-block;
-  line-height: 28px;
+  height: 44px;
+  width: 74px;
+  padding: 10px 20px;
   position: absolute;
 }
 
 .page-header__title-block{
-  background-size: cover;
   text-align: center;
+  background: url(../img/bg-back-mobile@1x.jpg) center top no-repeat;
+  background-size: cover;
 }
 
 .page-header__title{
-  font-family: "Open Sans",  "Tahoma", sans-serif;
+  font-family: "Open Sans Light",  "Tahoma", sans-serif;
   color: @header-color;
   font-size: 22px;
-  padding: 30px 0;
+  padding: 29px 20px 82px;
+  margin: 0;
   &--index{
     display: none;
+    margin-top: 26.8px;
+  }
+  &--form{
+    padding: 29px 20px 52px;
   }
 }
-
 
 @media @tablet-width{
   .page-header{
     background-size: cover;
   }
 
-  .page-header__title-block--index{
-    width: 300px;
+  .page-header__promo{
+    .container-tablet;
+    padding: 35px 20px 80px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   }
 
-  .page-header__title--index{
+  .page-header__view{
+    display: none;
+  }
+  .page-header__title-block{
+      height: 330px;
+    &--index{
+    width: 335px;
+  }
+}
+
+  .page-header__title {
+    font-size: 50px;
+    font-weight: 300;
+    padding: 69px 40px 140px;
+    line-height: 60px;
+    &--index{
     display: inline-block;
-  }
-
-  .page-header__wrap--index{
-    background: url(../img/iphone-hand-mobile@1x.png) no-repeat right bottom;
-    background-size: 60%;
+    font-family: "Open Sans Light";
+    font-weight: 300;
+    font-size: 40px;
+    width: 228px;
+    line-height: 48px;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    }
   }
 }
 
 @media @desktop-width{
+  .page-header__promo{
+    .container-desktop;
+    padding: 55px 10px 80px;
+  }
+
+  .page-header__title{
+      padding: 75px 0;
+      width: 350px;
+      margin: 0 auto;
+      &--index{
+        font-size: 50px;
+        line-height: 62px;
+        width: 280px;
+      }
+      &--form{
+        width: 750px;
+      }
+    }
+
   .page-header__wrap{
-    width: 960px;
-    margin: 0 auto;
+    background: #263645;
+  }
+
+  .page-header__title-block{
+    height: 283px;
   }
 }
