@@ -25,6 +25,7 @@
   display: block;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 3px;
 }
 
 .main-contacts__link{
@@ -35,7 +36,24 @@
   text-decoration: none;
 }
 
+.main-contacts__map{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.main-contacts__tringle{
+  height: 30px;
+  position: absolute;
+  fill: #fff;
+}
+
 @media @tablet-width {
+  .main-contacts{
+    padding-top: 45px;
+  }
+
   .main-contacts__title {
     font-size: 40px;
     width: 380px;
@@ -52,12 +70,17 @@
     }
   }
   .main-contacts__link{
-    line-height: 36px;
+    line-height: 33px;
     }
 
     .main-contacts__map {
     height: 378px;
     overflow: hidden;
+    padding-top: 3px;
+  }
+
+  .main-contacts__tringle{
+    height: 73px;
   }
 }
 

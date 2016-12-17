@@ -7,24 +7,27 @@
   padding: 20px;
   text-decoration: none;
   position: relative;
-  padding: 3px 41px 3px 0;
-  font-size: 15px;
+  padding: 6px 21px 3px 0;
+}
+
+.copyright__link-text{
+  font-size: 14px;
   color: #000;
-  &::after{
-    position: absolute;
-    content: "";
-    background: url("../img/logo-htmlacademy.svg") no-repeat;
-    width: 30px;
-    height: 35px;
-    right: 1px;
-    top: 1px;
-  }
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 10px 0 0;
+}
+
+.copyright__img{
+  display: inline-block;
+  vertical-align: top;
+  fill: @pink-color;
 }
 
 @media @tablet-width{
   .copyright{
     text-align: right;
-    margin-top: 50px;
-    padding-right: 10px;
+    margin-top: 45px;
+    padding-right: 0px;
   }
 }
