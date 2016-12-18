@@ -37,6 +37,15 @@
 
 .page-header__title-block{
   text-align: center;
+  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+}
+
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+   .page-header__title-block {
+    background: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
+  }
 }
 
 .page-header__title{
@@ -74,7 +83,20 @@
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
      .page-header__promo {
-      background: url(../img/bg-back-tablet@1x.jpg) center -111px no-repeat;
+      background: url(../img/bg-back-tablet@2x.jpg) center -111px no-repeat;
+    }
+  }
+
+  .page-header__title-block{
+    text-align: center;
+    background: url(../img/bg-back-tablet@1x.jpg) center -111px no-repeat;
+  }
+
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .page-header__title-block {
+      background: url(../img/bg-back-tablet@2x.jpg) center -111px no-repeat;
     }
   }
 
@@ -85,8 +107,8 @@
 
     &--index{
     width: 335px;
+    }
   }
-}
 
   .page-header__title {
     font-size: 50px;
@@ -103,13 +125,42 @@
     margin-bottom: 0;
     padding-bottom: 7px;
     }
+    &--photo{
+      padding: 69px 40px 140px;
+    }
   }
 }
-
 @media @desktop-width{
   .page-header__promo{
-    .container-desktop;
-    padding: 55px 10px 80px;
+    padding: 0;
+    background: url(../img/bg-back-desktop@1x.jpg) center -111px no-repeat;
+  }
+
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .page-header__promo {
+      background: url(../img/bg-back-desktop@2x.jpg) center -111px no-repeat;
+    }
+  }
+
+  .page-header__title-block{
+    text-align: center;
+    background: url(../img/bg-back-desktop@1x.jpg) center -111px no-repeat;
+  }
+
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .page-header__title-block {
+      background: url(../img/bg-back-desktop@2x.jpg) center -111px no-repeat;
+    }
+  }
+
+  .page-header__promo-wrap{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 33px 10px 104px;
   }
 
   .page-header__title{
@@ -118,11 +169,15 @@
       margin: 0 auto;
       &--index{
         font-size: 50px;
-        line-height: 62px;
+        line-height: 60px;
         width: 280px;
+        padding: 75px 0 6px;
       }
       &--form{
         width: 750px;
+      }
+      &--photo{
+        padding:65px 0;
       }
     }
 
@@ -131,6 +186,10 @@
   }
 
   .page-header__title-block{
-    height: 283px;
+    height: 285px;
+    &--index{
+      width: 300px;
+      height: 262px;
+    }
   }
 }

@@ -1,0 +1,39 @@
+.like{
+  color: @pink-color;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 2px 0 0 1px;
+}
+
+.like__ico{
+  fill: @pink-color;
+}
+
+.like__text{
+  margin-left: 8px;
+}
+
+.like__counter{
+  margin-left: 5px;
+}
+
+@media @tablet-width{
+  .like{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .like__ico{
+    margin: 6px 4px 0 15px;
+  }
+
+  .like__counter{
+    margin-left: 0;
+  }
+
+  .like__text{
+    margin-left: 0;
+  }
+}

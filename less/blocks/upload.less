@@ -10,7 +10,17 @@
 }
 
 .upload__filters{
-  margin-top: 35px;
+  margin-top: 31px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    min-width: 660px;
+    height: 1px;
+    bottom: -11px;
+    left: -20px;
+    background: #DFDFDF;
+  }
 }
 .upload__btn{
   font-family: "Open Sans Bold";
@@ -23,14 +33,16 @@
   width: 280px;
   font-size: 19px;
   line-height: 30px;
+  background: transparent;
     &--cancel{
       border-color: #DDDFE0;
       color: #DDDFE0;
+      background: #F2F2F2;
     }
 }
 
 .upload__checked{
-  margin-top: 25px;
+  margin-top: 38px;
 }
 
 @media @tablet-width {
@@ -44,7 +56,7 @@
   }
 
   .upload__checked{
-    margin-top: 16px;
+    margin-top: 45px;
     padding-left: 27px;
   }
 
@@ -60,8 +72,17 @@
       margin-bottom: 0;
     }
   }
+
+  .upload__filters::after{
+    display: none;
+  }
 }
 @media @desktop-width {
+  .upload{
+    background: transparent;
+    padding: 0;
+  }
+
   .upload__btn{
     display: inline-block;
     width: 180px;
@@ -70,12 +91,21 @@
 
   .upload__form{
     .container-desktop;
+    padding: 0;
     justify-content: space-between;
+    height: 514px;
+    box-sizing: border-box;
+    padding: 56px 79px;
   }
 
   .upload__checked{
     display: flex;
     justify-content: space-between;;
     padding: 0;
+    width: 410px;
+  }
+
+  .upload__photo{
+    margin-right: 90px;
   }
 }

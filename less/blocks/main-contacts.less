@@ -18,7 +18,7 @@
 .main-contacts__data{
   display: inline-block;
   width: 255px;
-  margin: 0 auto 22px;
+  margin: 0 auto 19px;
 }
 
 .main-contacts__appeal{
@@ -86,7 +86,7 @@
 
 @media @desktop-width{
   .main-contacts{
-    padding-top: 70px;
+    padding-top: 64px;
   }
 
   .main-contacts__info{
@@ -100,11 +100,17 @@
 
   .main-contacts__data{
     order: 1;
+    width: 255px;
+    height: 110px;
+    margin-bottom: 0;
     &--phone{
       order: 0;
     }
     &--mail{
       order: 2;
+    }
+    &:last-child{
+      margin-bottom: 0;
     }
   }
 
@@ -112,10 +118,18 @@
     font-size: 50px;
     width: 460px;
     line-height: 60px;
-    margin-bottom: 44px;
+    margin-bottom: 57px;
   }
 
   .main-contacts__appeal{
     margin-bottom: 22px;
+  }
+
+  .main-contacts__tringle {
+    height: 115px;
+  }
+
+  .main-contacts__map {
+    height: 514px;
   }
 }

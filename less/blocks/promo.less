@@ -1,5 +1,6 @@
 .promo{
-  background: @base-bg-second;
+  background: @base-bg-second url("../img/bg-triangle-white.svg") top no-repeat;
+  background-size: 100% 4%;
   color: @dark-text-color;
   text-align: center;
   overflow: hidden;
@@ -11,7 +12,7 @@
 }
 
 .promo__wrap{
-  padding: 29px 0 0 0;
+  padding: 65px 0 0 0;
 }
 
 .promo__block{
@@ -48,18 +49,19 @@
 @media @tablet-width{
   .promo{
     padding: 0;
+    background-size: 100% 13%;
   }
 
   .promo__wrap{
     .container-tablet;
     display: flex;
     flex-direction: row-reverse;
-    height: 427px;
+    height: 486px;
   }
 
   .promo__blocks{
     width: 100%;
-    padding-left: 12px;
+    padding: 60px 0 0 12px;
   }
 
   .promo__block{
@@ -76,7 +78,8 @@
     width: 300px;
     height: auto;
     img{
-      margin: -54px 0 0 10px;
+    margin: 0px;
+    padding: 5px 0 0 8px;
     }
   }
 
@@ -87,30 +90,40 @@
 
 @media @desktop-width{
   .promo{
-    padding: 0 0 35px;
+    padding: 0 0 10px;
+    background-size: 100% 14.5%;
   }
 
   .promo__blocks{
     float: none;
     width: auto;
     display: flex;
+    padding: 0 0 60px;
   }
 
   .promo__welcome{
-    display: block;
-    width: 33.3%;
-    background-position: center 0;
-    background-size: 55%;
+    display: inherit;
+    width: 292px;
+    margin-right: 30px;
+    img{
+      margin: 0;
+      padding: 0 3px;
+    }
   }
 
   .promo__wrap{
     display: flex;
     flex-direction: column-reverse;
     .container-desktop;
+    height: 580px;
   }
 
   .promo__image{
     display: flex;
+  }
+
+  .promo__blocks{
+    padding: 0;
   }
 
   .promo__block{
@@ -121,13 +134,17 @@
     font-size: 30px;
     line-height: 30px;
     width: 230px;
-    margin: 60px auto 40px;
+    margin: 50px auto 25px;
   }
 
   .promo__text{
     font-size: 18px;
     line-height: 30px;
-    width: 235px;
+    width: 238px;
+  }
+
+  .promo__line{
+    height: 100px;
   }
 
 }

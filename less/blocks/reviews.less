@@ -94,7 +94,8 @@
 
 @media @desktop-width {
   .reviews {
-      padding: 150px 20px 60px;
+    padding: 167px 20px 36px;
+    background: url("../img/icon-quotes.svg")  center 72px no-repeat;
   }
 
   .reviews__wrap{
@@ -108,9 +109,6 @@
     position: relative;
   }
 
-  /*для слайдера. Так как айдишники выше перебивают.
-  Когда я делал слайдер на css через id и label.
-  Каскадность тоже нельзя*/
   .reviews__item{
     display: none;
     position: absolute;
@@ -123,11 +121,13 @@
   .reviews__item p {
     font-size: 18px;
     line-height: 30px;
+    width: 100%;
   }
 
   .reviews__client-name{
     font-size: 24px;
     line-height: 30px;
+    margin: 21px 0 3px;
   }
 
   .reviews__info {
@@ -142,22 +142,20 @@
   .reviews__controller{
     display: inline-block;
     height: 60px;
-    width: 15px;
-    background: #777;
+    width: 42px;
     position: relative;
     z-index: 10;
-  }
-
-  .reviews__controller{
-    margin: 70px 4px 0;
+    margin: 46px 0px 0;
   }
 
   .reviews__controller--left{
     float: left;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat;
   }
 
   .reviews__controller--right{
     float: right;
+    background: url("../img/icon-review-arrow-right.svg") 17px 0px no-repeat;
   }
 
   .reviews__inner {
