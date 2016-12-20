@@ -9,9 +9,18 @@
   <body class="global-container">
     <header class="page-header">
       <div class="page-header__wrap">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <picture>
+              <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+            </picture>
+          </a>
+        </div>
         <nav class="main-nav main-nav--closed">
           <div class="main-nav__header">
-            <button type="button" class="main-nav__toogle"></button>
+            <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
           </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -43,17 +52,17 @@
           <fieldset class="form__data form__data--even form__data--choose">
             <span class="form__header-label form__header-label--choose">Ваши безбашенные достижения в путешествии</span>
             <input id="selfi" class="hidden__input form__check-input" type="checkbox" name="selfi" checked>
-            <label class="form__check-label" for="selfi">Сделал селфи с акулой</label>
+            <label class="form__check-label form__check-label--selfi" for="selfi">Сделал селфи с акулой</label>
             <input id="beach" class="hidden__input form__check-input" type="checkbox" name="beach" checked>
-            <label class="form__check-label" for="beach">Обгорел на пляже</label>
+            <label class="form__check-label form__check-label--beach" for="beach">Обгорел на пляже</label>
             <input id="saw-chack" class="hidden__input form__check-input" type="checkbox" name="Chack">
-            <label class="form__check-label" for="saw-chack">Видел Чака Норриса</label>
+            <label class="form__check-label form__check-label--saw-chack" for="saw-chack">Видел Чака Норриса</label>
             <input id="souvenir" class="hidden__input form__check-input" type="checkbox" name="souvenir">
-            <label class="form__check-label" for="souvenir">Накупил сувениров</label>
+            <label class="form__check-label form__check-label--souvenir" for="souvenir">Накупил сувениров</label>
             <input id="pisa" class="hidden__input form__check-input" type="checkbox" name="Pisa" checked>
-            <label class="form__check-label" for="pisa">Удержал башню</label>
+            <label class="form__check-label form__check-label--pisa" for="pisa">Удержал башню</label>
             <input id="destroy-hotel" class="hidden__input form__check-input" type="checkbox" name="destroy-hotel">
-            <label class="form__check-label" for="destroy-hotel">Разгромил отель</label>
+            <label class="form__check-label form__check-label--destroy-hotel" for="destroy-hotel">Разгромил отель</label>
           </fieldset>
           <fieldset class="form__data form__data--contacts">
             <span class="form__header-label form__header-label--contacts form__header-label--hidden">Контактная информация</span>
@@ -62,7 +71,8 @@
               <input class="form__text-input contacts-unit__input contacts-unit__input--phone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
             </div>
             <div class="form__contacts-block contacts-unit contacts-unit--mail">
-              <label class="form__text-label contacts-unit__label" for="email">Адресок почты</label>
+              <label class="form__text-label contacts-unit__label hidden-desktop" for="email">Адресок почты</label>
+              <label class="form__text-label contacts-unit__label show-desktop" for="email">Адрес почты</label>
               <input class="form__text-input contacts-unit__input contacts-unit__input--mail" type="email" name="email" id="email" required placeholder="Введите почту*">
             </div>
           </fieldset>
@@ -81,7 +91,8 @@
           </fieldset>
           <div class="form__bottom">
             <input class="form__button func-btn" type="submit" value="Отправить форму">
-            <span class="form__remark"><b>*</b> — обязательные поля</span>
+            <span class="form__remark hidden-desktop"><b>*</b> — обязательные поля</span>
+            <span class="form__remark show-desktop"><b>*</b> — обязательные для заполнения поля</span>
           </div>
           <div class="form__popup popup popup--error">
             <h3 class="popup__title">Что-то пошло не так</h3>

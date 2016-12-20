@@ -1,6 +1,6 @@
 .form__text-label{
   color: @pink-color;
-  display: block;
+  /*display: block;*/
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
@@ -207,7 +207,7 @@
 
   .form__radio-input:checked + .form__radio-text::after{
     left: 29px;
-    top: 24px;
+    top: 22px;
   }
 
   .form__header-label{
@@ -292,12 +292,16 @@
   .form__data{
     padding: 20px;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     &--name{
       width: 430px;
       padding: 5px 0px;
+      margin-bottom: 0;
     }
     &--application{
       width: 392px;
+      height: 257px;
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -305,13 +309,20 @@
     }
     &--contacts{
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-start;
+      margin: 42px 0 65px 0;
+      padding: 27px 0 7px;
     }
     &--choose{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
+      margin: 0 0 65px;
+      padding: 14px 0px 50px 40px;
+    }
+    &--message{
+      margin-bottom: 63px;
     }
   }
 
@@ -320,12 +331,12 @@
   }
 
   .form__textarea {
-    width: 90%;
-    min-height: 125px;
-    padding: 15px 0;
+    width: 776px;
+    min-height: 94px;
+    padding: 15px 20px;
     font-size: 18px;
     line-height: 30px;
-    margin: 22px 40px 25px;
+    margin: 22px 35px 25px;
   }
 
   .form__text-input{
@@ -349,8 +360,32 @@
     margin: 0px 15px 0px 0px;
   }
 
+  .form__check-label{
+    width: 280px;
+    box-sizing: border-box;
+    &--selfi{
+      order: 1;
+    }
+    &--saw-chack{
+      order: 2;
+    }
+    &--pisa{
+      order: 3;
+    }
+    &--beach{
+      order: 4;
+    }
+    &--souvenir{
+      order: 5;
+    }
+    &--destroy-hotel{
+      order: 6;
+    }
+  }
+
   .form__bottom{
     width: 100%;
+    margin: 0;
   }
 
 }

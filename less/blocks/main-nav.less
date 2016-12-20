@@ -1,27 +1,33 @@
 .main-nav{
   color: @header-color;
   text-align: right;
-  &--index{
-  /*  min-height: 460px;*/
-  }
 }
 
 .main-nav__header{
-  background: url("../img/logo-pink-white-mobile.svg") 21px 22px no-repeat;
+  position: relative;
   background-color: @dark-bg;
+  border-bottom: 1px solid #000001;
 }
 
 .main-nav__toogle{
-  margin: 20px 20px 25px 0;
+  position: absolute;
+  top: -49px;
+  right: -7px;
   background: url("../img/icon-menu-burger.svg") no-repeat;
   border: none;
   height: 24px;
-  width: 50px
+  width: 50px;
+  &--no-js{
+    background: url("../img/icon-menu-cross.svg") no-repeat;
+  }
+  &--hide{
+    background: url("../img/icon-menu-burger.svg") no-repeat;
+  }
 }
 
 .main-nav__wrapper{
   display: block;
-  background: #263645;
+/*  background: #263645;*/
 }
 
 .main-nav__list{
@@ -32,23 +38,27 @@
 
 .main-nav__link a{
   display: block;
-  padding: 19px 0 18px;
+  padding: 16px 0;
   color: @header-color;
   text-transform: uppercase;;
   text-align: center;
   text-decoration: none;
   border-bottom: 1px solid #000001;
-  font-size: 19px;
-  box-shadow: 0px -1px 1px 0px #000001;
+  border-top: 1px solid #4C5764;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans Bold";
+  background: #283645;
   }
 
 @media @tablet-width{
   .main-nav__header {
-    background: url("../img/logo-pink-white-mobile.svg") 113px 44px no-repeat;
+  /*  background: #283645 url("../img/logo-pink-white-mobile.svg") 113px 44px no-repeat;*/
   }
 
   .main-nav__toogle{
-    margin: 43px 23px;
+    top: -65px;
+    right: 13px;
   }
 }
 
@@ -72,6 +82,7 @@
     box-shadow: none;
     margin-left: 76px;
     line-height: 18px;
+    background: transparent;
   }
 
   .main-nav__list{
@@ -86,5 +97,8 @@
   .main-nav {
     max-width: 960px;
     margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

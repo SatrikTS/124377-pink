@@ -9,9 +9,18 @@
   <body class="global-container">
     <header class="page-header">
       <div class="page-header__wrap">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <picture>
+              <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+            </picture>
+          </a>
+        </div>
         <nav class="main-nav main-nav--closed">
           <div class="main-nav__header">
-            <button type="button" class="main-nav__toogle"></button>
+            <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
           </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">

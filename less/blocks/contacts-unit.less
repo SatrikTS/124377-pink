@@ -57,7 +57,20 @@
 
 @media @desktop-width{
   .contacts-unit{
-    width: 39%;
-    margin: 15px 0 0px;
+    width: 375px;
+    margin: 15px 13px 0 57px;
+    &--phone::after{
+      width: 62px;
+      background-position: 20px 22px;
+    }
+    &--mail::after{
+      width: 62px;
+      background-position: 20px 23px;
+    }
   }
+
+  .contacts-unit__input {
+    width: 94%;
+  }
+
 }
