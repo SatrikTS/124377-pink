@@ -9,31 +9,33 @@
   <body class="global-container">
     <header class="page-header">
       <div class="page-header__wrap">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <picture>
-              <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg"  alt="logo">
-            </picture>
-          </a>
-        </div>
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__header">
-            <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
+        <div class="page-header__box">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <picture>
+                <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+              </picture>
+            </a>
           </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__link"><a href="index.html">Главная</a></li>
-              <li class="main-nav__link main-nav__link--active"><a href="#">Фотографии</a></li>
-              <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__link"><a href="#">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="page-header__title-block">
-          <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
+          <nav class="main-nav main-nav--closed">
+            <div class="main-nav__header">
+              <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__link"><a href="index.html">Главная</a></li>
+                <li class="main-nav__link main-nav__link--active"><a href="#">Фотографии</a></li>
+                <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </div>
+      <div class="page-header__title-block">
+        <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
       </div>
     </header>
     <main>
@@ -208,7 +210,10 @@
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
               </a>
-              <input class="filters__roller" type="range" min="1" max="100" step="1">
+              <div class="filters__roller range">
+                <div class="range__line"></div>
+                <div class="range__control filters__control filters__control--size"></div>
+              </div>
             </div>
             <div class="filters__group">
               <a href="#" class="filters__btn filters__btn--fill">
@@ -218,7 +223,10 @@
                 <rect y="40" width="48" height="3"/>
               </svg>
               </a>
-              <input class="filters__roller" type="range" min="1" max="100" step="1">
+              <div class="filters__roller range">
+                <div class="range__line"></div>
+                <div class="range__control filters__control filters__control--fill"></div>
+              </div>
             </div>
             <div class="filters__group">
               <a href="#" class="filters__btn  filters__btn--contrast">
@@ -227,9 +235,15 @@
                   <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                 </svg>
               </a>
-              <input class="filters__roller" type="range" min="1" max="100" step="1">
+              <div class="filters__roller range">
+                <div class="range__line"></div>
+                <div class="range__control filters__control filters__control--contrast"></div>
+              </div>
             </div>
-            <input class="filters__roller filters__roller--general" type="range" min="1" max="100" step="1">
+            <div class="filters__roller filters__roller--general range">
+              <div class="range__line"></div>
+              <div class="range__control filters__control filters__control--general"></div>
+            </div>
           </fieldset>
           <div class="upload__checked">
             <button class="upload__btn  upload__btn--send" type="submit">Запостить</button>
@@ -313,6 +327,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

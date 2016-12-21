@@ -108,6 +108,10 @@
   .page-header__title-block{
     text-align: center;
     background: url(../img/bg-back-tablet@1x.jpg) center -111px no-repeat;
+    &--index{
+    width: 335px;
+    background: none;
+    }
   }
 
   @media
@@ -120,12 +124,6 @@
 
   .page-header__view{
     display: none;
-  }
-  .page-header__title-block{
-
-    &--index{
-    width: 335px;
-    }
   }
 
   .page-header__title {
@@ -153,15 +151,15 @@
 }
 @media @desktop-width{
   .page-header__promo{
-    padding: 0;
-    background: url(../img/bg-back-desktop@1x.jpg) center -111px no-repeat;
+    padding: 109px 0 0 0;
+    background: url(../img/bg-back-desktop@1x.jpg) center 0px no-repeat;
   }
 
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
      .page-header__promo {
-      background: url(../img/bg-back-desktop@2x.jpg) center -111px no-repeat;
+      background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
     }
   }
 
@@ -223,14 +221,24 @@
   .page-header__wrap{
     background: #263645;
     margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    background: rgba(16, 29, 41, 0.5);
+  }
+
+  .page-header__box{
+    .container-desktop;
     position: relative;
   }
 
   .page-header__title-block{
     height: 285px;
+    padding-top: 109px;
     &--index{
       width: 300px;
       height: 262px;
+      background: none;
+      padding-top: 0px;
     }
   }
 }

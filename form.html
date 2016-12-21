@@ -9,31 +9,33 @@
   <body class="global-container">
     <header class="page-header">
       <div class="page-header__wrap">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <picture>
-              <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg"  alt="logo">
-            </picture>
-          </a>
-        </div>
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__header">
-            <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
+        <div class="page-header__box">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <picture>
+                <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+              </picture>
+            </a>
           </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__link"><a href="index.html">Главная</a></li>
-              <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__link main-nav__link--active"><a href="#">Конкурс</a></li>
-              <li class="main-nav__link"><a href="#">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="page-header__title-block">
-          <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <nav class="main-nav main-nav--closed">
+            <div class="main-nav__header">
+              <button type="button" class="main-nav__toogle main-nav__toogle--no-js"></button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__link"><a href="index.html">Главная</a></li>
+                <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
+                <li class="main-nav__link main-nav__link--active"><a href="#">Конкурс</a></li>
+                <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </div>
+      <div class="page-header__title-block">
+        <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main>
@@ -93,18 +95,6 @@
             <input class="form__button func-btn" type="submit" value="Отправить форму">
             <span class="form__remark hidden-desktop"><b>*</b> — обязательные поля</span>
             <span class="form__remark show-desktop"><b>*</b> — обязательные для заполнения поля</span>
-          </div>
-          <div class="form__popup popup popup--error">
-            <h3 class="popup__title">Что-то пошло не так</h3>
-            <p class="popup__text">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
-            <input class="func-btn" type="submit" value="OK">
-          </div>
-          <div class="form__popup popup popup--success">
-            <h3 class="popup__title">Ваша заявка отправлена</h3>
-            <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
-              В ближайшее время мы ее расмотрим
-            </p>
-            <input class="func-btn" type="submit" value="Закрыть окно">
           </div>
         </form>
       </div>
@@ -184,6 +174,20 @@
         </div>
       </div>
     </footer>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
+    <div class="form__popup popup popup--error">
+      <h3 class="popup__title">Что-то пошло не так!</h3>
+      <p class="popup__text popup__text-error">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
+      <input class="func-btn popup__btn" type="submit" value="OK">
+    </div>
+    <div class="form__popup popup popup--success">
+      <h3 class="popup__title">Ваша заявка отправлена</h3>
+      <p class="popup__text popup__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы ее расмотрим
+      </p>
+      <div class="popup__footer">
+        <input class="func-btn popup__btn popup__btn--success" type="submit" value="Закрыть окно">
+      </div>
+    </div>
   </body>
 </html>

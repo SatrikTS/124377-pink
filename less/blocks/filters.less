@@ -9,14 +9,24 @@
 .filters__btn{
   display: inline-block;
   height: 48px;
-  width: 47px;
+  width: 53px;
+  box-sizing: border-box;
   &--contrast{
     padding: 6px 0 0;
+  }
+  &--size{
+    padding: 0px 0 0 8px;
   }
 }
 
 .filters__ico{
-  fill: @pink-color;
+  fill: #B5B9BE;
+  &:hover{
+    fill: @pink-color;
+  }
+  &:active{
+    fill: @pink-color;
+  }
 }
 
 .filters__roller{
@@ -25,7 +35,14 @@
   width: 90%;
   &--general{
     display: block;
+    margin: 29px 0 12px;
+    width: 240px;
   }
+}
+
+.filter__control{
+  top: -6px;
+  right: 29px;
 }
 
 @media @tablet-width{
@@ -42,6 +59,7 @@
     margin-top: 0;
     display: block;
     width: 78%;
+    padding-top: 9px;
     &--general{
       display: none;
     }
@@ -52,6 +70,9 @@
     width: 28px;
     text-align: center;
     &--contrast{
+      padding: 0;
+    }
+    &--size{
       padding: 0;
     }
   }
@@ -73,6 +94,19 @@
     border-bottom: 1px solid #DDDFE0;
     padding-right: 25px;
   }
+
+  .filters__control {
+    top: 3px;
+    &--size{
+      right: 43px;
+    }
+    &--fill{
+      right: 165px;
+    }
+    &--contrast{
+      right: 94px;
+    }
+  }
 }
 
 @media @desktop-width{
@@ -90,6 +124,7 @@
 
   .filters__group{
     height: 53px;
+    margin-bottom: 10px;
   }
 
   .filters__ico{
@@ -103,6 +138,19 @@
     }
     &--fil{
       margin-top: 10px;
+    }
+  }
+
+  .filters__control {
+    top: 3px;
+    &--size{
+      right: 208px;
+    }
+    &--fill{
+      right: 32px;
+    }
+    &--contrast{
+      right: 119px;
     }
   }
 }

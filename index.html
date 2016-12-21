@@ -9,28 +9,30 @@
   <body class="global-container">
     <header class="page-header">
       <div class="page-header__wrap page-header__wrap--index">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <picture>
-              <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg"  alt="logo">
-            </picture>
-          </a>
+        <div class="page-header__box">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <picture>
+                <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+              </picture>
+            </a>
+          </div>
+          <nav class="main-nav main-nav--closed main-nav--index">
+            <div class="main-nav__header">
+              <button type="button" class="main-nav__toogle main-nav__toogle--no-js" ></button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
+                <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
+                <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--index">
-          <div class="main-nav__header">
-            <button type="button" class="main-nav__toogle main-nav__toogle--no-js" ></button>
-          </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__link main-nav__link--active"><a href="#">Главная</a></li>
-              <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__link"><a href="#">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
       <div class="page-header__promo">
         <div class="page-header__promo-wrap">
@@ -225,6 +227,12 @@
           </div>
         </div>
         <div class="main-contacts__map">
+          <div class="main-contacts__marker">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+              <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+              <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+            </svg>
+          </div>
           <svg version="1.0" id="Layer_1" class="main-contacts__tringle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
             <polygon points="297.64,61.905 0,0 595.28,0 "/>
           </svg>
@@ -311,6 +319,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
