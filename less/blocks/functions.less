@@ -1,5 +1,6 @@
 .functions{
   display: inline-block;
+  background: #fff;
 }
 
 .functions__table-header{
@@ -15,6 +16,7 @@
   &--clear{
     background: #F2F2F2;
     display: none;
+    box-shadow: 0px -1px 0px 0px #F2F2F2;
   }
   &--standart{
     background: transparent;
@@ -44,12 +46,42 @@
   border: 2px solid #E5E5E5;
   height: 58px;
   width: 280px;
-  background-color: #fff;
+  position: relative;
   &--hidden{
     display: none;
   }
   &--no{
-    background: #fff url("../img/icon-no.svg") 230px 15px no-repeat;
+    background: url("../img/icon-no.svg") 232px 15px no-repeat;
+  }
+  &--yes{
+    background: url("../img/icon-yes.svg") 232px 15px no-repeat;
+  }
+  &--pink::before{
+    position: absolute;
+    content: "Розовый фильтр";
+    left: 22px;
+    top: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &--smile::before{
+    position: absolute;
+    content: "Смайлики";
+    left: 22px;
+    top: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &--comment::before{
+    position: absolute;
+    content: "Комментарии";
+    left: 22px;
+    top: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }
 
@@ -81,7 +113,6 @@
     border: 2px solid #E5E5E5;
     height: 44px;
     width: 20%;
-    background-color: #fff;
     &--hidden{
       display: table-cell;
       font-size: 14px;
@@ -90,10 +121,13 @@
       text-align: left;
     }
     &--no{
-      background: #fff url("../img/icon-no.svg") center no-repeat;
+      background: url("../img/icon-no.svg") center no-repeat;
     }
     &--yes{
-      background: #fff url("../img/icon-yes.svg") center no-repeat;
+      background: url("../img/icon-yes.svg") center no-repeat;
+    }
+    &::before{
+      display: none;
     }
   }
 

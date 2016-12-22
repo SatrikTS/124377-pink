@@ -2,21 +2,17 @@
   background-color: #1D2631;
 }
 
-.page-header__promo{
-    background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
-}
-
+/* Главаня страница, картинка с рукой и фон--- НАЧАЛО*/
 @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
     .page-header__promo {
-      backgrou  nd: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
+      background: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
   }
 }
 
-.page-header__promo-wrap{
-  padding-top: 400px;
-  background: url(../img/iphone-hand-mobile@1x.png)  left 110px no-repeat;
+.page-header__promo{
+    background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
 }
 
 @media
@@ -26,7 +22,12 @@
       background: url(../img/iphone-hand-mobile@2x.png) left 110px no-repeat;
   }
 }
+.page-header__promo-wrap{
+  padding-top: 400px;
+  background: url(../img/iphone-hand-mobile@1x.png)  left 110px no-repeat;
+}
 
+/* Главаня страница, картинка с рукой и фон--- КОНЕЦ*/
 
 .page-header__logo{
   color: @header-color;
@@ -40,11 +41,7 @@
   position: absolute;
 }
 
-.page-header__title-block{
-  text-align: center;
-  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
-}
-
+/*Вторичные страницы, фон в шапке НАЧАЛО*/
 @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
@@ -52,6 +49,13 @@
       background: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
   }
 }
+
+.page-header__title-block{
+  text-align: center;
+  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+}
+/*вторичные страницы КОНЕЦ*/
+
 
 .page-header__title{
   font-family: "Open Sans Light",  "Tahoma", sans-serif;
@@ -77,6 +81,8 @@
   .page-header{
     background-size: cover;
   }
+
+/* Главаня страница, картинка с рукой и фон--- НАЧАЛО*/
 
   .page-header__promo{
     .container-tablet;
@@ -105,12 +111,15 @@
     }
   }
 
+/* Главаня страница, картинка с рукой и фон--- Конец*/
+
+
   .page-header__title-block{
     text-align: center;
     background: url(../img/bg-back-tablet@1x.jpg) center -111px no-repeat;
     &--index{
-    width: 335px;
-    background: none;
+      width: 335px;
+      background: none;
     }
   }
 
@@ -119,6 +128,9 @@
     (min-resolution: 1.5dppx) {
       .page-header__title-block {
         background: url(../img/bg-back-tablet@2x.jpg) center -111px no-repeat;
+        &--index{
+          background: none;
+        }
     }
   }
 

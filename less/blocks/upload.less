@@ -1,6 +1,10 @@
 .upload{
   background: @base-bg-second;
-  padding: 20px 18px 32px;
+  padding: 20px 0 32px;
+}
+
+.upload__photo{
+  padding: 0 20px;
 }
 
 .upload__form{
@@ -12,16 +16,9 @@
 .upload__filters{
   margin-top: 31px;
   position: relative;
-  &::after{
-    position: absolute;
-    content: "";
-    min-width: 660px;
-    height: 1px;
-    bottom: -11px;
-    left: -20px;
-    background: #DFDFDF;
-  }
+  padding: 0.35em 20px 0.75em;
 }
+
 .upload__btn{
   font-family: "Open Sans Bold";
   border-radius: 30px;
@@ -41,8 +38,10 @@
     }
 }
 
-.upload__checked{
-  margin-top: 38px;
+.upload__checked {
+    margin-top: 11px;
+    padding-top: 27px;
+    border-top: 1px solid #DDDFE0;
 }
 
 @media @tablet-width {
@@ -57,7 +56,12 @@
 
   .upload__checked{
     margin-top: 45px;
-    padding-left: 27px;
+    padding: 0 0 0 31px;
+    border: none;
+  }
+
+  .upload__photo{
+    padding: 0;
   }
 
   .upload__form img{
