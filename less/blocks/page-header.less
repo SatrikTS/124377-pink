@@ -3,16 +3,23 @@
 }
 
 /* Главаня страница, картинка с рукой и фон--- НАЧАЛО*/
+.page-header__promo{
+    background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+    background-size: 700px auto;
+}
+
 @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
     .page-header__promo {
       background: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
+      background-size: 700px auto;
   }
 }
 
-.page-header__promo{
-    background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+.page-header__promo-wrap{
+  padding-top: 400px;
+  background: url(../img/iphone-hand-mobile@1x.png)  left 110px no-repeat;
 }
 
 @media
@@ -20,11 +27,8 @@
   (min-resolution: 1.5dppx) {
     .page-header__promo-wrap{
       background: url(../img/iphone-hand-mobile@2x.png) left 110px no-repeat;
+      background-size: 258px auto;
   }
-}
-.page-header__promo-wrap{
-  padding-top: 400px;
-  background: url(../img/iphone-hand-mobile@1x.png)  left 110px no-repeat;
 }
 
 /* Главаня страница, картинка с рукой и фон--- КОНЕЦ*/
@@ -42,20 +46,20 @@
 }
 
 /*Вторичные страницы, фон в шапке НАЧАЛО*/
+.page-header__title-block{
+  text-align: center;
+  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
+}
+
 @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
     .page-header__title-block {
       background: url(../img/bg-back-mobile@2x.jpg) center -67px no-repeat;
+      background-size: 700px auto;
   }
 }
-
-.page-header__title-block{
-  text-align: center;
-  background: url(../img/bg-back-mobile@1x.jpg) center -67px no-repeat;
-}
 /*вторичные страницы КОНЕЦ*/
-
 
 .page-header__title{
   font-family: "Open Sans Light",  "Tahoma", sans-serif;
@@ -95,6 +99,7 @@
     (min-resolution: 1.5dppx) {
       .page-header__promo {
         background: url(../img/bg-back-tablet@2x.jpg) center -111px no-repeat;
+        background-size: 1200px auto;
     }
   }
 
@@ -108,11 +113,10 @@
     (min-resolution: 1.5dppx) {
       .page-header__promo-wrap{
         background: url(../img/iphone-hand-tablet@2x.png) -20px bottom no-repeat;
+        background-size: 700px auto;
     }
   }
-
 /* Главаня страница, картинка с рукой и фон--- Конец*/
-
 
   .page-header__title-block{
     text-align: center;
@@ -128,6 +132,7 @@
     (min-resolution: 1.5dppx) {
       .page-header__title-block {
         background: url(../img/bg-back-tablet@2x.jpg) center -111px no-repeat;
+        background-size: 1200px auto;
         &--index{
           background: none;
         }
@@ -145,7 +150,7 @@
     line-height: 60px;
     &--index{
     display: inline-block;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", "Tahoma", sans-serif;
     font-weight: 300;
     font-size: 40px;
     width: 228px;
@@ -172,6 +177,7 @@
     (min-resolution: 1.5dppx) {
       .page-header__promo {
         background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
+        background-size: 2560px auto;
     }
   }
 
@@ -185,19 +191,21 @@
     (min-resolution: 1.5dppx) {
       .page-header__promo-wrap{
         background: url(../img/iphone-hand-desktop@2x.png) 25px bottom  no-repeat;
+        background-size: 1050px auto;
     }
   }
 
   .page-header__title-block{
     text-align: center;
-    background: url(../img/bg-back-desktop@1x.jpg) center -111px no-repeat;
+    background: url(../img/bg-back-desktop@1x.jpg) center 0px no-repeat;
   }
 
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
       .page-header__title-block {
-        background: url(../img/bg-back-desktop@2x.jpg) center -111px no-repeat;
+        background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
+        background-size: 2560px auto;
     }
   }
 

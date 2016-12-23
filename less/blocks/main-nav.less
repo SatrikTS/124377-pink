@@ -46,7 +46,7 @@
   border-top: 1px solid #4C5764;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Open Sans Bold", "Tahoma";
+  font-family: "Open Sans Bold", "Tahoma", sans-serif;
   background: #283645;
   }
 
@@ -57,7 +57,11 @@
   .main-nav__toogle{
     top: -65px;
     right: 13px;
+    &--no-js{
+    background-position: left;
+    }
   }
+
 }
 
 @media @desktop-width{
@@ -82,7 +86,7 @@
     margin-right: 3px;
     line-height: 18px;
     background: transparent;
-    font-family: "Open Sans Light", "Tahoma";
+    font-family: "Open Sans Light", "Tahoma", sans-serif;
   }
 
   .main-nav__list{

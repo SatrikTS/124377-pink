@@ -1,11 +1,11 @@
 .form__text-label{
   color: @pink-color;
-  /*display: block;*/
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   margin: 0px 0 5px 22px;
-  &--hidden{
+  &--hidden-mobile{
     display: none;
   }
 }
@@ -36,7 +36,6 @@
 
 .form__data{
   background: @base-bg;
-  margin: 0px 0px 24px;
   padding: 4.5px 20px 0;
   border-color: transparent;
   &--even{
@@ -45,6 +44,19 @@
   }
   &--message{
     padding: 13px 20px 0;
+    margin: 0 0 24px;
+  }
+  &--name{
+    margin: 0 0 24px;
+  }
+  &--choose{
+    margin: 0 0 27px;
+  }
+  &--contacts{
+    margin: 0 0 26px;
+  }
+  &--application{
+    margin: 0 0 26px
   }
 }
 
@@ -62,7 +74,7 @@
     height: 35px;
     border: 2px solid #E5E5E5;
     left: 0px;
-    top: 5px;
+    top: 8px;
     background: #fff;
   }
 }
@@ -73,7 +85,7 @@
   height: 23px;
   width: 23px;
   left: 7px;
-  top: 9px;
+  top: 12px;
   background: transparent url("../img/icon-yes-check.svg") no-repeat;
 }
 
@@ -112,7 +124,7 @@
 .form__textarea{
   margin: 17px 0;
   width: 85%;
-  min-height: 165px;
+  min-height: 167px;
   padding: 15px 20px;
   font-size: 18px;
   line-height: 30px;
@@ -190,6 +202,7 @@
       height: 310px;
       border-color: transparent;
       margin: 0 0 45px 0;
+      padding: 0 18px;
     }
   }
 
@@ -250,16 +263,19 @@
   }
 
   .form__text-label{
-    margin: 0px 17px 0px 0px;
-    &--hidden{
+    margin: 0px 18px 0px 0px;
+    &--hidden-mobile{
       display: block;
+    }
+    &--hidden-desktop{
+      display: none;
     }
   }
 
   .form__text-input{
     width: 75%;
     flex-grow: 1;
-    padding-left: 18px;
+    padding-left: 20px;
   }
 
   .form__radio-text{
@@ -339,7 +355,7 @@
   }
 
   .form__text-input{
-    width: 73%;
+    width: 71%;
   }
 
   .form__radio-text {
