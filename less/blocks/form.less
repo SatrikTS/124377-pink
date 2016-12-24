@@ -32,6 +32,12 @@
   line-height: 30px;
   margin-bottom: 18px;
   border: 2px solid #e5e5e5;
+  &:hover{
+    border-color: #293541;
+  }
+  &:focus{
+    border-color: @pink-color;
+  }
 }
 
 .form__data{
@@ -77,6 +83,12 @@
     top: 8px;
     background: #fff;
   }
+  &:hover::before{
+    border-color: #2C3640;
+  }
+  &:active::before{
+    border-color: @pink-color;
+  }
 }
 
 .form__check-input:checked + .form__check-label::after{
@@ -107,6 +119,12 @@
     top: 9px;
     background: #fff;
   }
+  &:hover::before{
+    border-color: #2C3640;
+  }
+  &:active::before{
+    border-color: @pink-color;
+  }
 }
 
 .form__radio-input:checked + .form__radio-text::after{
@@ -120,7 +138,6 @@
   background: @pink-color;
 }
 
-
 .form__textarea{
   margin: 17px 0;
   width: 85%;
@@ -129,6 +146,12 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
+  &:hover{
+    border-color: #293541;
+  }
+  &:focus{
+    border-color: @pink-color;
+  }
 }
 
 .form__bottom {
