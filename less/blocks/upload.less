@@ -31,10 +31,26 @@
   font-size: 19px;
   line-height: 30px;
   background: transparent;
+    &:hover{
+      background: @pink-color;
+      color: #fff;
+    }
+    &:active{
+      color: #DD8093;
+    }
     &--cancel{
       border-color: #DDDFE0;
       color: #DDDFE0;
       background: #F2F2F2;
+      &:hover{
+        border-color: #B6B9BE;
+        color: #B6B9BE;
+        background: transparent;
+      }
+      &:active{
+        background: #B6B9BE;
+        color: #CCCFD4;
+      }
     }
 }
 
