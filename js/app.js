@@ -25,7 +25,3 @@ for (var i=0; i<filtersBtn.length; i++){
     }
   })
 }
-
-var showPopup = document.querySelector(".form__button");
-var errorPopup = document.querySelector(".popup--error");
-var successPopup = document.querySelector(".popup--success");

@@ -4,7 +4,7 @@ var myMap,
 
 function init(){
     myMap = new ymaps.Map("contacts-map", {
-        center: [59.9393,30.3236],
+        center: [59.9386,30.3232],
         zoom: 15
     });
 
@@ -15,10 +15,13 @@ function init(){
       iconLayout: "default#image",
       iconImageHref: "img/icon-map-marker.svg",
       iconImageSize: [35, 35],
-      iconImageOffset: [-18, -10]
+      iconImageOffset: [-18, 20]
     }
   );
 
     myMap.geoObjects.add(myPlacemark);
     myMap.behaviors.disable('scrollZoom');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('mapTools');
+    myMap.controls.remove('typeSelector');
 }

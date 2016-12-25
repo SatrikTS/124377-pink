@@ -15,7 +15,7 @@
               <picture>
                 <source media = "(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media = "(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg"  alt="logo">
+                <img src="img/logo-pink-white-mobile.svg"  alt="logo" width="146" height="40">
               </picture>
             </a>
           </div>
@@ -166,7 +166,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.js"></script>
     <div class="form__popup popup popup--error">
       <h3 class="popup__title">Что-то пошло не так!</h3>
       <p class="popup__text popup__text-error">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -181,5 +180,7 @@
         <input class="func-btn popup__btn popup__btn--success" type="submit" value="Закрыть окно">
       </div>
     </div>
+    <script src="js/picturefill.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

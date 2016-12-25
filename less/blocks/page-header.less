@@ -149,14 +149,14 @@
     padding: 29px 40px 140px;
     line-height: 60px;
     &--index{
-    display: inline-block;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    width: 228px;
-    line-height: 48px;
-    margin-bottom: 0;
-    padding-bottom: 7px;
+      display: inline-block;
+      font-family: "Open Sans Light", "Tahoma", sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      width: 228px;
+      line-height: 48px;
+      margin-bottom: 0;
+      padding-bottom: 7px;
     }
     &--photo{
       padding: 69px 40px 140px;
@@ -167,23 +167,29 @@
   }
 }
 @media @desktop-width{
-  .page-header__promo{
-    padding: 109px 0 0 0;
+  .page-header{
     background: url(../img/bg-back-desktop@1x.jpg) center 0px no-repeat;
   }
 
   @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      .page-header__promo {
-        background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
-        background-size: 2560px auto;
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .page-header {
+      background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
+      background-size: 2560px auto;
     }
   }
 
+  .page-header__promo{
+    padding: 0;
+    background: none;
+  }
+
   .page-header__promo-wrap{
-    padding: 0 0 81px;
     background: url(../img/iphone-hand-desktop@1x.png)  25px bottom  no-repeat;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 33px 10px 104px;
   }
 
   @media
@@ -198,6 +204,15 @@
   .page-header__title-block{
     text-align: center;
     background: url(../img/bg-back-desktop@1x.jpg) center 0px no-repeat;
+    background: none;
+    height: 285px;
+    padding-top: 0px;
+    &--index{
+      background: none;
+      width: 300px;
+      height: 262px;
+      padding-top: 0px;
+    }
   }
 
   @media
@@ -206,17 +221,10 @@
       .page-header__title-block {
         background: url(../img/bg-back-desktop@2x.jpg) center 0px no-repeat;
         background-size: 2560px auto;
+        &--index{
+          background: none;
+        }
     }
-  }
-
-  .page-header__title-block{
-    text-align: center;
-  }
-
-  .page-header__promo-wrap{
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 33px 10px 104px;
   }
 
   .page-header__title{
@@ -239,9 +247,7 @@
     }
 
   .page-header__wrap{
-    background: #263645;
     margin: 0 auto;
-    position: absolute;
     width: 100%;
     background: rgba(16, 29, 41, 0.5);
   }
@@ -249,16 +255,5 @@
   .page-header__box{
     .container-desktop;
     position: relative;
-  }
-
-  .page-header__title-block{
-    height: 285px;
-    padding-top: 109px;
-    &--index{
-      width: 300px;
-      height: 262px;
-      background: none;
-      padding-top: 0px;
-    }
   }
 }
