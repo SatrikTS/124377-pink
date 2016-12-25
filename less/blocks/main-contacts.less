@@ -47,9 +47,24 @@
   height: 200px;
   overflow: hidden;
   padding-top: 15px;
+  &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      border-top: 35px solid #fff;
+      border-right: 50vw solid transparent;
+      border-left: 50vw solid transparent;
+  }
   img{
     width: 100%;
   }
+}
+
+.main-contacts__map-inner{
+  height: 100%;
 }
 
 .main-contacts__tringle{
@@ -93,6 +108,9 @@
     height: 378px;
     overflow: hidden;
     padding-top: 3px;
+    &::before{
+      border-top: 72px solid #fff;
+    }
   }
 
   .main-contacts__tringle{
@@ -149,8 +167,11 @@
     height: 115px;
   }
 
-  .main-contacts__map {
+  .main-contacts__map{
     height: 514px;
+    &::before{
+      border-top: 118px solid #fff;
+    }
   }
 
   .main-contacts__marker {

@@ -12,7 +12,6 @@ var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var del = require("del");
-
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 
@@ -85,7 +84,7 @@ gulp.task("clean", function(){
 
 gulp.task("copy", function(){
   return gulp.src([
-    "less/*",
+    "css/*",
     "fonts/*",
     "img/*",
     "js/*",
