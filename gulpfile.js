@@ -57,7 +57,7 @@ gulp.task("symbols", function(){
 });
 
 gulp.task("images", function () {
-  gulp.src("img/*.{png,jpg}")
+  return gulp.src("img/*.{png,jpg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true})
